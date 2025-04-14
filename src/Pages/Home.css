@@ -1,0 +1,101 @@
+/* Style de base pour la grille */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Colonnes flexibles */
+  gap: 1rem; /* Espacement entre les éléments */
+  padding: 20px;
+}
+
+.home {
+  padding: 20px;
+}
+
+.category-section {
+  margin-bottom: 40px;
+}
+
+/* Titre de section */
+.category-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333; /* Couleur par défaut */
+  transition: color 0.3s ease; /* Animation fluide pour le changement de couleur */
+}
+
+/* Animation au survol */
+.category-title:hover {
+  color: #f4d03f; /* Couleur de survol (par exemple, jaune crème) */
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card__image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card__content {
+  padding: 15px;
+}
+
+.project-card__title {
+  font-size: 1.5rem;
+  margin: 0 0 10px;
+}
+
+.project-card__title,
+.project-card__title a {
+  font-size: 1.5rem;
+  margin: 0 0 10px;
+  text-decoration: none; /* Supprime le soulignement */
+  color: #333; /* Couleur du texte */
+}
+
+.project-card__description {
+  font-size: 1rem;
+  color: #555;
+}
+
+.project-card__description,
+.project-card__description a {
+  font-size: 1rem;
+  color: #555; /* Couleur du texte */
+  text-decoration: none; /* Supprime le soulignement */
+}
+
+/* Style pour les sections */
+.portfolio-section {
+  margin-bottom: 2rem; /* Espacement entre les sections */
+}
+
+.portfolio-section__title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Media query pour les petits écrans */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr; /* Une seule colonne sur les petits écrans */
+  }
+
+  .portfolio-section__title {
+    font-size: 1.25rem; /* Réduit la taille du titre */
+  }
+
+  .portfolio {
+    padding: 1rem; /* Ajoute un padding pour éviter que le contenu touche les bords */
+  }
+}

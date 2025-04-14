@@ -1,0 +1,164 @@
+/* Définir les couleurs de base */
+:root {
+    --primary: #d4a373; /* Couleur principale beige */
+    --secondary: #5c5c5c; /* Couleur secondaire gris foncé */
+    --light-bg: #fdf6ec; /* Fond clair beige */
+    --hover-bg: #e8d8c3; /* Couleur de fond au survol */
+    --white: #fff;
+    --text-light: #f0f0f0;
+}
+
+/* Style général du header */
+header {
+    background-color: var(--light-bg);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    padding: 1rem 0;
+}
+
+/* Conteneur de l'en-tête */
+header .max-w-7xl {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary);
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: #b08968; /* Couleur légèrement plus foncée au survol */
+}
+
+/* Navigation de bureau */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+/* Liens du menu */
+nav a {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    color: var(--secondary); /* Couleur gris foncé */
+}
+
+nav a:hover {
+    background-color: var(--hover-bg); /* Couleur beige clair au survol */
+    color: var(--primary); /* Couleur principale beige */
+}
+
+/* Liens actifs */
+nav a.active {
+    background-color: var(--primary); /* Couleur principale beige */
+    color: var(--white); /* Texte blanc pour le lien actif */
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Style de base pour le header */
+.header {
+  background-color: #f9f9f9;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* Liens actifs */
+.nav-links a.active {
+    background-color: var(--primary); /* Couleur principale beige */
+    color: var(--white); /* Texte blanc pour le lien actif */
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Liens au survol */
+  .nav-links a:hover {
+    background-color: var(--hover-bg); /* Couleur beige clair au survol */
+    color: var(--primary); /* Couleur principale beige */
+  }
+/* Bouton du menu hamburger */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--primary); /* Couleur principale beige */
+}
+
+/* Media query pour les petits écrans */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--light-bg); /* Fond clair beige */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+}

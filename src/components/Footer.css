@@ -1,0 +1,51 @@
+/* Définir les couleurs de base */
+:root {
+  --primary: #d4a373; /* Couleur principale beige */
+  --secondary: #5c5c5c; /* Couleur secondaire gris foncé */
+  --light-bg: #fdf6ec; /* Fond clair beige */
+  --hover-bg: #e8d8c3; /* Couleur de fond au survol */
+  --white: #fff;
+  --text-light: #f0f0f0;
+}
+
+/* Style général du footer */
+footer {
+  background-color: var(--light-bg); /* Fond clair beige */
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Ombre subtile en haut */
+  display: flex;
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center;     /* Centrer verticalement */
+  padding: 1rem 0.5rem;    /* Réduction de l'épaisseur */
+  font-family: 'Roboto', sans-serif; /* Police moderne et élégante */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Conteneur du texte du footer */
+footer .text-center {
+  text-align: center; /* Centrer le texte */
+  padding: 7px; /* Réduction de l'espacement interne */
+}
+
+/* Style du texte de copyright */
+footer .text-sm {
+  font-size: 1.2rem; /* Taille de police légèrement plus grande */
+  font-weight: 500; /* Poids de police moyen */
+  color: var(--secondary); /* Texte gris foncé */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer .text-sm:hover {
+  transform: scale(1.1); /* Effet d'agrandissement au survol */
+  color: var(--primary); /* Changement de couleur au survol */
+}
+
+/* Responsiveness : Adaptation pour les petits écrans */
+@media (max-width: 767px) {
+  footer {
+    padding: 0.75rem 0.5rem; /* Réduction supplémentaire de l'épaisseur sur mobile */
+  }
+
+  footer .text-sm {
+    font-size: 1rem; /* Réduit la taille de la police sur mobile */
+  }
+}

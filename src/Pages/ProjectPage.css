@@ -1,0 +1,370 @@
+:root {
+  --light-bg: #fdf5e6; /* Couleur crème */
+}
+
+.media-bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 128px;
+    height: 128px;
+    overflow: hidden;
+  }
+  
+  .media-bubble img,
+  .media-bubble video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .project-media {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .project-media {
+      flex-direction: row;
+    }
+  }
+  
+  .main-media img,
+  .main-media video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stacked-media .media-bubble {
+    width: 100%;
+    height: auto;
+  }
+  
+  .stacked-media img,
+  .stacked-media video {
+    width: 100%;
+    height: 6rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+
+  /* Mise en page des colonnes */
+  .project-layout {
+    display: flex;
+    flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+    gap: 1.5rem; /* Ajoute un espacement entre les colonnes */
+    align-items: flex-start; /* Aligne les bulles au même niveau */
+  }
+
+  /* Taille des colonnes */
+  .project-details {
+    flex: 0.5; /* Définit la largeur relative de la colonne gauche */
+  }
+
+  .project-demo,
+  .github-bubble {
+    flex: 0.5; /* Définit la largeur relative des bulles */
+    width: 100%; /* S'assure qu'elles prennent toute la largeur disponible */
+    max-width: 100%; /* Empêche toute restriction de largeur */
+  }
+
+  /* Suppression des marges inutiles */
+  .project-demo .bubble {
+    margin: 0; /* Supprime les marges internes */
+    padding: 1rem; /* Ajuste le padding si nécessaire */
+  }
+
+  /* Espacement entre la bulle RÉSULTATS / DEMO et le footer */
+  .project-demo {
+    margin-bottom: 2rem; /* Ajoute un espace sous la bulle Résultats / Demo */
+    width: 100%; /* Prend toute la largeur disponible */
+    max-width: 600px; /* Limite la largeur maximale pour correspondre aux autres bulles */
+    margin: 0 auto; /* Centre la bulle horizontalement */
+  }
+
+  /* Ajout d'un espacement global sous le conteneur principal */
+  .project-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+    min-height: 100vh; /* Assure que la page occupe toute la hauteur de la fenêtre */
+    padding: 0 1rem; /* Ajoute un peu de padding pour éviter que le contenu touche les bords */
+    padding-bottom: 2rem; /* Ajoute un espace sous toute la page */
+  }
+
+  /* Affichage des médias côte à côte */
+  .main-media {
+    display: flex;
+    flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+    gap: 1rem; /* Ajoute un espacement entre les médias */
+  }
+
+  .main-media .media-item {
+    flex: 1 1 calc(50% - 1rem); /* Chaque média occupe 50% de la largeur avec un espacement */
+    max-width: calc(50% - 1rem); /* Limite la largeur maximale à 50% */
+  }
+
+  .main-media img,
+  .main-media video {
+    width: 100%; /* Les médias occupent toute la largeur de leur conteneur */
+    height: auto; /* Ajuste la hauteur automatiquement */
+    object-fit: cover; /* Ajuste l'image ou la vidéo pour qu'elle remplisse le conteneur */
+    border-radius: 0.5rem; /* Bordures arrondies */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre */
+  }
+  
+  .bubble {
+    background-color: #f9f9f9;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px; /* Limite la hauteur maximale */
+    word-wrap: break-word; /* Force le retour à la ligne pour les mots longs */
+  }
+  
+  /* Conteneur des technologies */
+  .tech-bubble {
+    display: flex; /* Assure que le contenu est aligné horizontalement */
+    align-items: center; /* Centre verticalement les icônes et le texte */
+    background-color: var(--light-bg); /* Couleur de fond */
+    color: #333; /* Couleur du texte */
+    padding: 0.5rem 1rem;
+    border-radius: 9999px; /* Coins arrondis pour un effet de bulle */
+    font-size: 0.875rem;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajoute une ombre subtile */
+    margin: 0.5rem; /* Ajoute un espacement entre les bulles */
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+    word-wrap: break-word; /* Force le retour à la ligne pour les mots longs */
+    white-space: pre-wrap; /* Préserve les sauts de ligne et permet le retour à la ligne automatique */
+  }
+
+  /* Conteneur global des technologies */
+  .flex-wrap {
+    display: flex;
+    flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+    gap: 0.5rem; /* Ajoute un espacement entre les bulles */
+  }
+
+  /* Réduction de la taille des icônes dans la section Technologies */
+  .tech-bubble img {
+    width: 12px; /* Taille de l'icône */
+    height: 12px; /* Taille de l'icône */
+    margin-right: 6px; /* Espacement entre l'icône et le texte */
+  }
+
+  /* Espacement entre les bulles */
+  .project-details .bubble {
+    margin-bottom: 1.5rem; /* Ajoute de l'espacement entre les bulles */
+  }
+
+  /* Taille des médias dans la section Résultats/Demo */
+  .main-media .media-item img,
+  .main-media .media-item video {
+    max-width: 100%; /* Limite la largeur à 100% du conteneur */
+    max-height: 300px; /* Limite la hauteur maximale */
+    object-fit: cover; /* Ajuste l'image ou la vidéo pour qu'elle remplisse le conteneur */
+    border-radius: 0.5rem; /* Bordures arrondies */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre */
+  }
+
+  /* Ajout d'un espace à droite de la bulle FORMATION */
+  .education-item {
+    margin-right: 1.5rem; /* Ajoute un espace à droite de la bulle FORMATION */
+  }
+
+  /* Suppression des puces dans la liste des détails */
+  .details-list {
+    list-style: none; /* Supprime les puces */
+    padding-left: 0; /* Supprime le retrait à gauche */
+    margin: 0; /* Supprime les marges */
+    list-style-type: none; /* Supprime les puces */
+    padding: 0; /* Supprime le padding */
+    margin: 0; /* Supprime les marges */
+  }
+
+  /* Taille du logo GitHub */
+  .github-logo {
+    width: 48px; /* Augmente la largeur du logo */
+    height: 48px; /* Augmente la hauteur du logo */
+    display: block; /* Assure que le logo est traité comme un bloc */
+    margin: 0 auto; /* Centre horizontalement le logo */
+  }
+
+  /* Alignement des bulles CODE SOURCE et RÉSULTATS / DEMO */
+  .project-demo,
+  .github-bubble {
+    flex: 1; /* Les deux bulles occupent la même largeur */
+    width: 100%; /* S'assure qu'elles prennent toute la largeur disponible */
+    max-width: 100%; /* Empêche toute restriction de largeur */
+  }
+
+      /* Couleur personnalisée pour le titre */
+      .project-title {
+        color: var(--primary); /* Couleur principale */
+        text-align: center; /* Centre le texte horizontalement */
+      }
+
+  /* Technologies */
+  .bubble.bg-light-bg {
+    padding: 1rem; /* Ajuste le padding */
+    border-radius: 0.5rem; /* Bordures arrondies */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre */
+  }
+
+  .bubble.bg-light-bg h2 {
+    font-size: 1.25rem; /* Taille du texte */
+    font-weight: 600; /* Poids du texte */
+    margin-bottom: 0.5rem; /* Espacement en bas */
+    color: var(--primary); /* Couleur principale */
+  }
+
+  .bubble.bg-light-bg .flex.flex-wrap {
+    display: flex; /* Affiche les éléments en ligne */
+    flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+    gap: 0.5rem; /* Ajoute un espacement entre les éléments */
+  }
+
+  .tech-bubble.inline-block {
+    background-color: var(--hover-bg); /* Couleur de fond */
+    color: var(--primary); /* Couleur du texte */
+    font-size: 0.75rem; /* Taille du texte */
+    font-weight: 500; /* Poids du texte */
+    padding: 0.25rem 0.75rem; /* Ajuste le padding */
+    border-radius: 9999px; /* Coins arrondis */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajoute une ombre subtile */
+  }
+
+  .tech-bubble.inline-block img {
+    width: 20px; /* Taille de l'icône */
+    height: 20px; /* Taille de l'icône */
+    margin-right: 0.5rem; /* Espacement entre l'icône et le texte */
+  }
+
+  /* Overlay pour l'image en plein écran */
+  .fullscreen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fond noir avec transparence */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50; /* S'assure que l'image est au-dessus de tout */
+    cursor: pointer; /* Change le curseur pour indiquer que l'utilisateur peut cliquer */
+  }
+
+  /* Image en plein écran */
+  .fullscreen-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px; /* Ajoute des coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Ajoute une ombre subtile */
+  }
+
+  /* Styles pour les images cliquables */
+  .main-media img {
+    cursor: pointer; /* Change le curseur pour indiquer que l'image est cliquable */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Ajoute une transition fluide */
+  }
+
+  .main-media img:hover {
+    transform: scale(1.05); /* Agrandit légèrement l'image au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ajoute une ombre plus prononcée */
+  }
+
+  button {
+    background-color: #007bff; /* Couleur principale */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #0056b3; /* Couleur au survol */
+  }
+
+  /* Bouton Retour */
+  .back-button {
+    position: fixed; /* Position fixe pour rester en bas à droite */
+    bottom: 20px; /* Distance du bas de la page */
+    right: 20px; /* Distance du côté droit de la page */
+    background-color: var(--primary); /* Couleur principale de la page */
+    color: white; /* Couleur du texte */
+    border: none; /* Supprime les bordures */
+    padding: 10px 15px; /* Espacement interne */
+    border-radius: 50px; /* Bouton arrondi */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre subtile */
+    font-size: 0.875rem; /* Taille du texte */
+    cursor: pointer; /* Change le curseur au survol */
+    z-index: 100; /* Assure que le bouton est au-dessus des autres éléments */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animation fluide */
+  }
+
+  .back-button:hover {
+    background-color: var(--primary-dark); /* Couleur plus foncée au survol */
+    transform: scale(1.1); /* Agrandit légèrement le bouton au survol */
+  }
+
+
+  /* Médias */
+.main-media {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.media-item img,
+.media-item video {
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+/* Plein écran */
+.fullscreen-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+/* Media query pour les petits écrans */
+@media (max-width: 768px) {
+  .project-layout {
+    flex-direction: column; /* Les colonnes passent en une seule colonne */
+  }
+
+  .project-details,
+  .project-demo {
+    flex: auto; /* Chaque section occupe toute la largeur */
+  }
+
+  .bubble {
+    padding: 1rem; /* Réduit le padding pour les petits écrans */
+  }
+
+  .project-title {
+    font-size: 1.5rem; /* Réduit la taille du titre */
+    text-align: center;
+  }
+
+  .main-media {
+    gap: 0.5rem; /* Réduit l'espacement entre les médias */
+  }
+
+  .media-item img,
+  .media-item video {
+    width: auto; /* Les médias occupent toute la largeur */
+  }
+}

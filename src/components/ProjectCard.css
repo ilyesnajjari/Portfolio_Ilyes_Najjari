@@ -1,0 +1,75 @@
+/* Lien global de la carte */
+.project-card__link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Style de base pour la carte */
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 350px;
+    justify-content: space-between;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Image du projet */
+  .project-card__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Contenu de la carte */
+  .project-card__content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  
+  /* Titre */
+  .project-card__title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+  }
+  
+  /* Description */
+  .project-card__description {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+    text-decoration: none;
+  }
+
+  /* Media query pour les petits écrans */
+  @media (max-width: 768px) {
+    .project-card {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Réduit l'ombre */
+    }
+  
+    .project-card__image {
+      height: 150px; /* Réduit la hauteur de l'image */
+    }
+  
+    .project-card__title {
+      font-size: 1rem; /* Réduit la taille du titre */
+    }
+  
+    .project-card__description {
+      font-size: 0.8rem; /* Réduit la taille de la description */
+    }
+  }

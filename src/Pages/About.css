@@ -1,0 +1,319 @@
+/* Section principale */
+.section {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease-in-out;
+  flex: 1 1 calc(50% - 2rem); /* Deux colonnes sur les grands écrans */
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section au survol */
+.section:hover {
+  transform: scale(1.02); /* Effet de survol */
+}
+
+/* Titre des sections */
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Séparateur entre les sections */
+.separator {
+  height: 1px;
+  background-color: #eee;
+  margin: 2rem 0;
+}
+
+/* Liste des items */
+ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Bulle d'introduction */
+.intro-bubble {
+  background-color: var(--light-bg); /* Couleur de fond */
+  border: 1px solid var(--hover-bg); /* Bordure subtile */
+  border-radius: 16px; /* Coins arrondis pour l'effet bulle */
+  padding: 2rem; /* Espacement interne */
+  margin-bottom: 2rem; /* Espacement avec les sections suivantes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour l'effet de profondeur */
+  text-align: center; /* Centrer le texte */
+  width: 100%; /* Prend toute la largeur */
+  box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+}
+
+/* Titre dans la bulle */
+.intro-bubble h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary); /* Couleur principale */
+  margin-bottom: 1rem;
+}
+
+/* Texte dans la bulle */
+.intro-bubble p {
+  font-size: 1.2rem;
+  color: var(--secondary); /* Couleur secondaire */
+  line-height: 1.6; /* Espacement entre les lignes */
+}
+
+
+/* Titre des expériences ou formations */
+.experience-item h3,
+.education-content h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--primary); /* Couleur principale */
+  margin-bottom: 0.5rem;
+}
+
+/* Conteneur des sections côte à côte */
+.sections-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap; /* Permet de passer à la ligne sur les petits écrans */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Chaque section dans le conteneur */
+.sections-container .section {
+  flex: 1; /* Les sections prennent une largeur égale */
+  min-width: 300px; /* Largeur minimale pour éviter que les sections soient trop petites */
+}
+
+/* Conteneur des compétences */
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  width: auto;
+  box-sizing: border-box;
+}
+
+/* Style des bulles */
+.skill-box {
+  background-color: var(--light-bg);
+  border: 1px solid var(--hover-bg);
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.skill-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-box ul li {
+  font-size: 1rem;
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-box ul li img {
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
+  object-fit: contain;
+}
+
+
+/* Conteneur des catégories */
+.skill-category {
+  margin-bottom: 1.5rem;
+}
+
+/* Sous-titres des catégories de compétences */
+.skill-box h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary); /* Couleur principale */
+  margin-bottom: 1rem;
+  text-transform: uppercase; /* Met en majuscules */
+  text-align: center; /* Centre le texte */
+}
+
+/* Sous-titres des catégories spécifiques (comme Coding, Tools, etc.) */
+.skill-category h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--secondary); /* Couleur secondaire */
+  margin-bottom: 0.5rem;
+}
+
+/* Icônes des compétences */
+.skill-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.skill-icons li img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.skill-icons li img:hover {
+  transform: scale(1.1);
+}
+
+/* Conteneur de l'image avec infobulle */
+.skill-icons li {
+  position: relative; /* Nécessaire pour positionner l'infobulle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Infobulle */
+.skill-icons li::after {
+  content: attr(data-name); /* Utilise l'attribut personnalisé data-name */
+  position: absolute;
+  bottom: -30px; /* Positionne l'infobulle sous l'icône */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Affiche l'infobulle au survol */
+.skill-icons li:hover::after {
+  opacity: 1;
+}
+
+
+/* Formation */
+.education-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  margin-right: 1.5rem; /* Ajoute un espace à droite de la bulle Formation */
+  width: 100%; /* Assure que l'élément respecte la largeur du conteneur */
+  box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+}
+
+.education-item img.education-image {
+  flex-shrink: 0; /* Empêche l'image de rétrécir */
+  width: 80px; /* Taille fixe de l'image */
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.education-content {
+  flex: 1; /* Permet au contenu de prendre l'espace restant */
+  display: flex;
+  flex-direction: column;
+}
+.education-content h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.education-content .education-period {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+}
+
+.education-content p {
+  font-size: 1rem;
+  color: var(--secondary);
+  margin: 0;
+}
+
+/* Style de base pour la page */
+.about-page {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Media query pour les petits écrans */
+@media (max-width: 768px) {
+  .sections-container {
+    flex-direction: column; /* Une seule colonne sur les petits écrans */
+  }
+
+  .section {
+    flex: 1 1 100%; /* Chaque section occupe toute la largeur */
+  }
+
+  .intro-bubble {
+    padding: 1rem;
+    width: 100%; /* Assure que la bulle occupe toute la largeur */
+    margin: 0; /* Supprime les marges latérales */
+    box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+  }
+
+  .section h2 {
+    font-size: 1.25rem; /* Réduit la taille des titres */
+  }
+
+  .about-page {
+    padding: 1rem; /* Réduit le padding global */
+  }
+}
+
+/* Media query pour les grands écrans */
+@media (min-width: 1024px) {
+  .intro-bubble {
+    grid-column: 1 / -1; /* Étend la bulle sur toute la largeur dans une grille */
+    margin: 0 auto; /* Centre la bulle horizontalement */
+  }
+}
+
