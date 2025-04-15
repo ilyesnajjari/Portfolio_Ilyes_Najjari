@@ -24,7 +24,7 @@ const Contact = () => {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/ilyes-najjari-a4695628b/"
+            href="https://www.linkedin.com/in/ilyes-najjari/"
             target="_blank"
             rel="noopener noreferrer"
             className="contact-link"

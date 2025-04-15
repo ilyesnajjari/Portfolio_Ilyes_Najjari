@@ -184,6 +184,8 @@ export const projects = [
         imageUrl: '/Portfolio_Ilyes_Najjari/media/AlbumPhoto/Album.png',
         media: [
           { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/AlbumPhoto/Album1.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/AlbumPhoto/Album2.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/AlbumPhoto/Album3.png' },
         //{ type: 'video', src: '/media/AlbumPhoto/Album1.mp4' }
         ],
         link: 'https://github.com/ilyesnajjari/Album_photos',
@@ -327,6 +329,12 @@ export const projects = [
         media: [
           { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Enigma/Enigma1.jpg" },
           { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Enigma/Enigma2.jpg" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Enigma/Enigma3.png" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Enigma/Enigma4.png" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Enigma/Enigma5.png" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Enigma/Enigma6.png" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Enigma/Enigma7.png" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Enigma/Enigma8.png" },
           //{ type: 'video', src: '/Portfolio_Ilyes_Najjari/media/Enigma/Enigma1.mp4'},
         ],
         link: "https://github.com/ilyesnajjari/",
@@ -355,6 +363,10 @@ export const projects = [
         imageUrl: "/Portfolio_Ilyes_Najjari/media/Multi/Multi1.png",
         media: [
           { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Multi/Multi1.png" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Multi/Multi2.png" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Multi/Multi3.png" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Multi/Multi4.png" },
+
           //{ type: 'video', src: "/Portfolio_Ilyes_Najjari/media/Multi/Multi1.mp4" },
         ],
         link: "https://github.com/ilyesnajjari/",
@@ -382,7 +394,11 @@ export const projects = [
         imageUrl: "/Portfolio_Ilyes_Najjari/media/Rewind/Rewind1.jpg",
         media: [
           { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Rewind/Rewind1.jpg" },
-          { type: 'video', src: "/Portfolio_Ilyes_Najjari/media/Rewind/Rewind1.mp4" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Rewind/Rewind2.png" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Rewind/Rewind3.png" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Rewind/Rewind4.png" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Rewind/Rewind5.png" },
+          //{ type: 'video', src: "/Portfolio_Ilyes_Najjari/media/Rewind/Rewind1.mp4" },
         ],
         link: "https://github.com/ilyesnajjari/",
         description:
@@ -408,6 +424,9 @@ export const projects = [
         imageUrl: "/Portfolio_Ilyes_Najjari/media/SteamSession/SteamSession1.jpg",
         media: [
           { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/SteamSession/SteamSession1.jpg" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/SteamSession/SteamSession2.png" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/SteamSession/SteamSession3.png" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/SteamSession/SteamSession4.png" },
           //{ type: 'video', src: "/Portfolio_Ilyes_Najjari/media/SteamSession/SteamSession1.mp4" },
         ],
         link: "https://github.com/ilyesnajjari/",
@@ -502,7 +521,7 @@ export const personalInfo = {
   bio: "Étudiant en école d'ingénieur et en master d’informatique, rigoureux, passionné par les technologies, la finance et l'enseignement. J'ai une forte appétence pour l'algorithmique, le développement d'applications et les systèmes intelligents.",
   socials: {
     github: 'https://github.com/ilyesnajjari',
-    linkedin: 'https://www.linkedin.com/in/ilyesnajjari/',
+    linkedin: 'https://www.linkedin.com/in/ilyes-najjari',
     twitter: '',
   },
 };

@@ -131,10 +131,8 @@ nav a.active {
   }
 /* Bouton du menu hamburger */
 .menu-toggle {
-  display: none;
-  all: unset;
+  display: none; /* Masque le bouton par défaut */
   background: none;
-  background-color: transparent;
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
@@ -142,11 +140,24 @@ nav a.active {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Supprime la couleur bleue au clic ou au focus */
+/* Supprime le contour bleu au clic (focus) */
 .menu-toggle:focus,
-.menu-toggle:active {
-  outline: none; /* Supprime le contour bleu */
-  box-shadow: none; /* Supprime l'ombre par défaut */
+.nav-links a:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Évite la couleur bleue au clic sur mobile (WebKit) */
+.menu-toggle,
+.nav-links a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Gère le style actif (clic) */
+.menu-toggle:active,
+.nav-links a:active {
+  background-color: var(--hover-bg);
+  color: var(--primary);
 }
 
 /* Media query pour les petits écrans */
