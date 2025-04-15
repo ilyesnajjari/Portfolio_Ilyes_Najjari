@@ -7,11 +7,11 @@ export const projects = [
       {
         id: 1,
         title: 'Chatbox temps réel',
-        imageUrl: '/media/Chatbox/Chatbox1.png',
+        imageUrl: '/Portfolio_Ilyes_Najjari/media/Chatbox/Chatbox1.png',
         media: [
-          { type: 'image', src: '/media/Chatbox/Chatbox1.png' },
-          { type: 'image', src: '/media/Chatbox/Chatbox2.png' },
-          { type: 'image', src: '/media/Chatbox/Chatbox3.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Chatbox/Chatbox1.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Chatbox/Chatbox2.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Chatbox/Chatbox3.png' },
         ],
         link: 'https://github.com/ilyesnajjari/projet_nodejs',
         description: 'Application de messagerie instantanée en temps réel avec WebSockets, avatars personnalisés, messages publics/privés, statut de frappe et création de channels.',
