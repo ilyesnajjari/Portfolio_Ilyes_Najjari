@@ -131,12 +131,20 @@ nav a.active {
   }
 /* Bouton du menu hamburger */
 .menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: var(--primary); /* Couleur principale beige */
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--primary); /* Couleur principale */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Supprime la couleur bleue au clic ou au focus */
+.menu-toggle:focus,
+.menu-toggle:active {
+  outline: none; /* Supprime le contour bleu */
+  box-shadow: none; /* Supprime l'ombre par défaut */
 }
 
 /* Media query pour les petits écrans */

@@ -367,4 +367,20 @@
   .media-item video {
     width: auto; /* Les médias occupent toute la largeur */
   }
+
+  body {
+    overflow-x: hidden; /* Désactive le défilement horizontal uniquement sur les petits écrans */
+  }
+}
+
+/* Empêche le défilement horizontal */
+body {
+  overflow-x: hidden; /* Désactive le défilement horizontal */
+}
+
+html, body {
+  overflow-x: hidden; /* Désactive le défilement horizontal */
+  margin: 0; /* Supprime les marges par défaut */
+  padding: 0; /* Supprime les paddings par défaut */
+  width: 100%; /* Assure que la largeur ne dépasse pas 100% */
 }

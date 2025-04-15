@@ -32,10 +32,10 @@ export const projects = [
       {
         id: 2,
         title: 'Click-to-Dial Extension Firefox',
-        imageUrl: '/media/Click_to_Dial/click2dial0.png',
+        imageUrl: '/Portfolio_Ilyes_Najjari/media/Click_to_Dial/click2dial0.png',
         media: [
-          { type: 'image', src: '/media/Click_to_Dial/click2dial1.png' },
-          { type: 'image', src: '/media/Click_to_Dial/click2dial2.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Click_to_Dial/click2dial1.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Click_to_Dial/click2dial2.png' },
         ],
         link: 'https://github.com/ilyesnajjari/click2dial',
         description: 'Extension Firefox permettant de détecter les numéros de téléphone sur une page web, les surligner et déclencher automatiquement un appel à partir d’un simple clic.',
@@ -55,10 +55,10 @@ export const projects = [
       {
         id: 3,
         title: 'Site Vitrine pour Cours Particuliers',
-        imageUrl: '/media/Site_Cours_Pariculiers/cours_particuliers1.png',
+        imageUrl: '/Portfolio_Ilyes_Najjari/media/Site_Cours_Pariculiers/cours_particuliers1.png',
         media: [
-          { type: 'image', src: '/media/Site_Cours_Pariculiers/cours_particuliers1.png' },
-          { type: 'image', src: '/media/Site_Cours_Pariculiers/cours_particuliers2.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Site_Cours_Pariculiers/cours_particuliers1.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Site_Cours_Pariculiers/cours_particuliers2.png' },
         ],
         link: 'https://github.com/ilyesnajjari/Site_Web_Cours_Particuliers',
         description: 'Création d’un site vitrine statique en HTML/CSS pour promouvoir des cours particuliers avec mise en page responsive et contenu clair.',
@@ -83,16 +83,16 @@ export const projects = [
       {
         id: 4,
         title: 'Frigo Intelligent - Suggestion de Recettes',
-        imageUrl: '/media/Frigo/frigo.jpg',
+        imageUrl: '/Portfolio_Ilyes_Najjari/media/Frigo/frigo.jpg',
         media: [
-          { type: 'image', src: '/media/Frigo/frigo1.jpg' },
-          { type: 'image', src: '/media/Frigo/frigo2.jpg' },
-          { type: 'image', src: '/media/Frigo/frigo3.jpg' },
-          { type: 'image', src: '/media/Frigo/frigo4.jpg' },
-          { type: 'image', src: '/media/Frigo/frigo5.jpg' },
-          { type: 'image', src: '/media/Frigo/frigo6.jpg' },
-          { type: 'image', src: '/media/Frigo/frigo7.jpg' },
-          { type: 'image', src: '/media/Frigo/frigo8.jpg' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Frigo/frigo1.jpg' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Frigo/frigo2.jpg' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Frigo/frigo3.jpg' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Frigo/frigo4.jpg' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Frigo/frigo5.jpg' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Frigo/frigo6.jpg' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Frigo/frigo7.jpg' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Frigo/frigo8.jpg' },
         ],
         link: 'https://github.com/ilyesnajjari/Frigo',
         description: 'Application desktop permettant de saisir les ingrédients du frigo et de proposer des recettes via l’API Spoonacular, avec gestion de la péremption, favoris, allergies et nutrition.',
@@ -119,15 +119,15 @@ export const projects = [
       {
         id: 5,
         title: 'Call Reporting - Dashboard Télé-enquêteurs',
-        imageUrl: '/media/app-ensome/app-ensome1.png',
+        imageUrl: '/Portfolio_Ilyes_Najjari/media/app-ensome/app-ensome1.png',
         media: [
-          { type: 'image', src: '/media/app-ensome/app-ensome1.png' },
-          { type: 'image', src: '/media/app-ensome/app-ensome2.png' },
-          { type: 'image', src: '/media/app-ensome/app-ensome3.png' },
-          { type: 'image', src: '/media/app-ensome/app-ensome4.png' },
-          { type: 'image', src: '/media/app-ensome/app-ensome5.png' },
-          { type: 'image', src: '/media/app-ensome/app-ensome6.png' },
-          { type: 'image', src: '/media/app-ensome/app-ensome7.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/app-ensome/app-ensome1.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/app-ensome/app-ensome2.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/app-ensome/app-ensome3.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/app-ensome/app-ensome4.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/app-ensome/app-ensome5.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/app-ensome/app-ensome6.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/app-ensome/app-ensome7.png' },
         ],
         link: 'https://github.com/ilyesnajjari/app-ensome',
         description: 'Outil de suivi des performances des télé-enquêteurs avec login, affichage des statuts en temps réel et statistiques journalières et mensuelles.',
@@ -154,12 +154,12 @@ export const projects = [
       {
         id: 6,
         title: 'Application de Découverte AR',
-        imageUrl: '/media/AR_Explorer/AR_Explorer.png',
+        imageUrl: '/Portfolio_Ilyes_Najjari/media/AR_Explorer/AR_Explorer.png',
         media: [
-          { type: 'image', src: '/media/AR_Explorer/AR_Explorer1.png' },
-          { type: 'image', src: '/media/AR_Explorer/AR_Explorer2.png' },
-          { type: 'image', src: '/media/AR_Explorer/AR_Explorer3.png' },
-          { type: 'image', src: '/media/AR_Explorer/AR_Explorer4.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/AR_Explorer/AR_Explorer1.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/AR_Explorer/AR_Explorer2.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/AR_Explorer/AR_Explorer3.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/AR_Explorer/AR_Explorer4.png' },
 
         ],
         link: 'https://github.com/ilyesnajjari/AR_Explorer',
@@ -181,10 +181,10 @@ export const projects = [
       {
         id: 7,
         title: 'Album Photo Mobile',
-        imageUrl: '/media/AlbumPhoto/Album.png',
+        imageUrl: '/Portfolio_Ilyes_Najjari/media/AlbumPhoto/Album.png',
         media: [
-          { type: 'image', src: '/media/AlbumPhoto/Album1.png' },
-          { type: 'video', src: '/media/AlbumPhoto/Album1.mp4' }
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/AlbumPhoto/Album1.png' },
+        //{ type: 'video', src: '/media/AlbumPhoto/Album1.mp4' }
         ],
         link: 'https://github.com/ilyesnajjari/Album_photos',
         description: "Application Android permettant de parcourir une galerie de photos, d'effectuer des zooms sur une image et de revenir à la vue d’ensemble par un zoom arrière. Navigation fluide avec balayage entre les photos.",
@@ -209,11 +209,11 @@ export const projects = [
       {
         id: 16,
         title: 'Analyse de Données Boursières - ARIMA & Moyennes Mobiles',
-        imageUrl: '/media/Stock/stock1.png',
+        imageUrl: '/Portfolio_Ilyes_Najjari/media/Stock/stock1.png',
         media: [
-          { type: 'image', src: '/media/Stock/stock1.png' },
-          { type: 'image', src: '/media/Stock/stock2.png' },
-          { type: 'image', src: '/media/Stock/stock3.png' }
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Stock/stock1.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Stock/stock2.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Stock/stock3.png' }
         ],
         link: 'https://github.com/ilyesnajjari/Quantitative-Finance-Portfolio/tree/main/stock-data-analysis',
         description: 'Projet Python visant à analyser des séries temporelles financières à partir de données Yahoo Finance : calcul de moyennes mobiles, modélisation ARIMA, prévisions et visualisation.',
@@ -236,12 +236,12 @@ export const projects = [
       {
         id: 17,
         title: 'FIFA Player Price Tracker - Analyse de Données de Marché',
-        imageUrl: '/media/FIFA_Player/fifa1.png',
+        imageUrl: '/Portfolio_Ilyes_Najjari/media/FIFA_Player/fifa1.png',
         media: [
-          { type: 'image', src: '/media/FIFA_Player/fifa1.png' },
-          { type: 'image', src: '/media/FIFA_Player/fifa2.png' },
-          { type: 'image', src: '/media/FIFA_Player/fifa4.png' },
-          { type: 'image', src: '/media/FIFA_Player/fifa5.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/FIFA_Player/fifa1.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/FIFA_Player/fifa2.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/FIFA_Player/fifa4.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/FIFA_Player/fifa5.png' },
 
         ],
         link: 'https://github.com/ilyesnajjari/Quantitative-Finance-Portfolio/tree/main/fifa_player_price_tracker',
@@ -269,10 +269,10 @@ export const projects = [
       {
         id: 8,
         title: "Casse-Briques Unreal Engine",
-        imageUrl: "/media/Casse-Briques/CasseBrique1.jpg",
+        imageUrl: "/Portfolio_Ilyes_Najjari/media/Casse-Briques/CasseBrique1.jpg",
         media: [
-          { type: 'image', src: "/media/Casse-Briques/CasseBrique1.jpg" },
-          { type: 'image', src: "/media/Casse-Briques/CasseBrique2.jpg" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Casse-Briques/CasseBrique1.jpg" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Casse-Briques/CasseBrique2.jpg" },
         ],
         link: "https://github.com/ilyesnajjari/",
         description:
@@ -296,10 +296,10 @@ export const projects = [
       {
         id: 9,
         title: "Bomber Man 3D",
-        imageUrl: "/media/bomberman/Bomberman1.jpg",
+        imageUrl: "/Portfolio_Ilyes_Najjari/media/bomberman/Bomberman1.jpg",
         media: [
-          { type: 'image', src: "/media/bomberman/Bomberman1.jpg" },
-          { type: 'image', src: "/media/bomberman/Bomberman2.jpg" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/bomberman/Bomberman1.jpg" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/bomberman/Bomberman2.jpg" },
         ],
         link: "https://github.com/ilyesnajjari/",
         description:
@@ -323,11 +323,11 @@ export const projects = [
       {
         id: 10,
         title: "Jeu narratif d’exploration",
-        imageUrl: "/media/Enigma/Enigma1.jpg",
+        imageUrl: "/Portfolio_Ilyes_Najjari/media/Enigma/Enigma1.jpg",
         media: [
-          { type: 'image', src: "/media/Enigma/Enigma1.jpg" },
-          { type: 'image', src: "/media/Enigma/Enigma2.jpg" },
-          { type: 'video', src: '/media/Enigma/Enigma1.mp4'},
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Enigma/Enigma1.jpg" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Enigma/Enigma2.jpg" },
+          //{ type: 'video', src: '/Portfolio_Ilyes_Najjari/media/Enigma/Enigma1.mp4'},
         ],
         link: "https://github.com/ilyesnajjari/",
         description:
@@ -352,10 +352,10 @@ export const projects = [
       {
         id: 11,
         title: "Lobby multijoueur avec session LAN",
-        imageUrl: "/media/Multi/Multi1.png",
+        imageUrl: "/Portfolio_Ilyes_Najjari/media/Multi/Multi1.png",
         media: [
-          { type: 'image', src: "/media/Multi/Multi1.png" },
-          { type: 'video', src: "/media/Multi/Multi1.mp4" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Multi/Multi1.png" },
+          //{ type: 'video', src: "/Portfolio_Ilyes_Najjari/media/Multi/Multi1.mp4" },
         ],
         link: "https://github.com/ilyesnajjari/",
         description:
@@ -379,10 +379,10 @@ export const projects = [
       {
         id: 12,
         title: "Système de rewind temporel",
-        imageUrl: "/media/Rewind/Rewind1.jpg",
+        imageUrl: "/Portfolio_Ilyes_Najjari/media/Rewind/Rewind1.jpg",
         media: [
-          { type: 'image', src: "/media/Rewind/Rewind1.jpg" },
-          { type: 'video', src: "/media/Rewind/Rewind1.mp4" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Rewind/Rewind1.jpg" },
+          { type: 'video', src: "/Portfolio_Ilyes_Najjari/media/Rewind/Rewind1.mp4" },
         ],
         link: "https://github.com/ilyesnajjari/",
         description:
@@ -405,10 +405,10 @@ export const projects = [
       {
         id: 13,
         title: "Connexion Steam & test réseau",
-        imageUrl: "/media/SteamSession/SteamSession1.jpg",
+        imageUrl: "/Portfolio_Ilyes_Najjari/media/SteamSession/SteamSession1.jpg",
         media: [
-          { type: 'image', src: "/media/SteamSession/SteamSession1.jpg" },
-          { type: 'video', src: "/media/SteamSession/SteamSession1.mp4" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/SteamSession/SteamSession1.jpg" },
+          //{ type: 'video', src: "/Portfolio_Ilyes_Najjari/media/SteamSession/SteamSession1.mp4" },
         ],
         link: "https://github.com/ilyesnajjari/",
         description:
@@ -432,10 +432,10 @@ export const projects = [
             {
         id: 14,
         title: "Battle Royale Western",
-        imageUrl: "/media/bomberman/.jpg",
+        imageUrl: "/Portfolio_Ilyes_Najjari/media/bomberman/.jpg",
         media: [
-          { type: 'image', src: "/media/bomberman/.jpg" },
-          { type: 'image', src: "/media/bomberman/.jpg" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/bomberman/.jpg" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/bomberman/.jpg" },
         ],
         link: "https://github.com/ilyesnajjari/",
         description:
@@ -460,10 +460,10 @@ export const projects = [
             {
         id: 15,
         title: "Shooter Coop Viking (défense de vagues)",
-        imageUrl: "/media/bomberman/.jpg",
+        imageUrl: "/Portfolio_Ilyes_Najjari/media/bomberman/.jpg",
         media: [
-          { type: 'image', src: "/media/bomberman/.jpg" },
-          { type: 'image', src: "/media/bomberman/.jpg" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/bomberman/.jpg" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/bomberman/.jpg" },
         ],
         link: "https://github.com/ilyesnajjari/",
         description:

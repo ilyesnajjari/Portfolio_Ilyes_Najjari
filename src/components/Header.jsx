@@ -13,14 +13,36 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-container">
-        <Link to="/" className="logo">Ilyes NAJJARI</Link> {/* Modification ici */}
+        <Link to="/" className="logo">Ilyes NAJJARI</Link>
         <button className="menu-toggle" onClick={toggleMenu}>
           ☰
         </button>
         <nav className={`nav-links ${menuOpen ? 'open' : ''}`}>
-          <Link to="/Portfolio_Ilyes_Najjari" className={location.pathname === '/' ? 'active' : ''} onClick={() => setMenuOpen(false)}>Projets</Link>
-          <Link to="/about" className={location.pathname === '/about' ? 'active' : ''} onClick={() => setMenuOpen(false)}>À propos</Link>
-          <Link to="/contact" className={location.pathname === '/contact' ? 'active' : ''} onClick={() => setMenuOpen(false)}>Contact</Link>
+          <Link
+            to="/Portfolio_Ilyes_Najjari"
+            className={
+              location.pathname === '/Portfolio_Ilyes_Najjari' || location.pathname === '/'
+                ? 'active'
+                : ''
+            }
+            onClick={() => setMenuOpen(false)}
+          >
+            Projets
+          </Link>
+          <Link
+            to="/about"
+            className={location.pathname === '/about' ? 'active' : ''}
+            onClick={() => setMenuOpen(false)}
+          >
+            À propos
+          </Link>
+          <Link
+            to="/contact"
+            className={location.pathname === '/contact' ? 'active' : ''}
+            onClick={() => setMenuOpen(false)}
+          >
+            Contact
+          </Link>
         </nav>
       </div>
     </header>
