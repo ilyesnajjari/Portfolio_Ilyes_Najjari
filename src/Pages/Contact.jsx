@@ -46,7 +46,7 @@ const Contact = () => {
 
         <div className="mt-8 text-center">
           <a
-            href="CV.pdf" // Remplacez par le chemin réel de votre CV
+            href="/Portfolio_Ilyes_Najjari/CV.pdf"
             download="Ilyes_Najjari_CV.pdf"
             className="download-button"
           >

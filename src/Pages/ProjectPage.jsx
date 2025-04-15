@@ -45,7 +45,7 @@ const ProjectPage = () => {
         {/* Colonne gauche : Petites bulles */}
         <div className="project-details flex-[0.6] flex flex-col gap-6">
           {/* Description */}
-          <div className="bubble bg-light-bg p-4 rounded-lg shadow-md">
+          <div className="bubble bg-light-bg p-4 rounded-lg shadow-md description">
             <h2 className="text-xl font-semibold mb-2 text-primary">Description :</h2>
             <p className="text-gray-700 text-sm">{project.description}</p>
           </div>

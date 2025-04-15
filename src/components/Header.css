@@ -132,7 +132,9 @@ nav a.active {
 /* Bouton du menu hamburger */
 .menu-toggle {
   display: none;
+  all: unset;
   background: none;
+  background-color: transparent;
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
