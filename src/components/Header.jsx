@@ -18,7 +18,7 @@ const Header = () => {
           ☰
         </button>
         <nav className={`nav-links ${menuOpen ? 'open' : ''}`}>
-          <Link to="/" className={location.pathname === '/' ? 'active' : ''} onClick={() => setMenuOpen(false)}>Projets</Link>
+          <Link to="/Portfolio_Ilyes_Najjari" className={location.pathname === '/' ? 'active' : ''} onClick={() => setMenuOpen(false)}>Projets</Link>
           <Link to="/about" className={location.pathname === '/about' ? 'active' : ''} onClick={() => setMenuOpen(false)}>À propos</Link>
           <Link to="/contact" className={location.pathname === '/contact' ? 'active' : ''} onClick={() => setMenuOpen(false)}>Contact</Link>
         </nav>
