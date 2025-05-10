@@ -451,15 +451,17 @@ export const projects = [
             {
         id: 14,
         title: "Battle Royale Western",
-        imageUrl: "/Portfolio_Ilyes_Najjari/media/bomberman/.jpg",
+        imageUrl: "/Portfolio_Ilyes_Najjari/media/Western/Western.jpg",
         media: [
-          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/bomberman/.jpg" },
-          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/bomberman/.jpg" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Western/Western1.png" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Western/Western2.png" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Western/Western3.png" },
+
         ],
         link: "https://github.com/ilyesnajjari/",
         description:
-          "Jeu multijoueur compétitif inspiré de Fortnite dans un univers Western, avec respawn jusqu'à la fin du timer, construction via ressources, et score basé sur les kills. Les joueurs s'affrontent en équipes de 2.",
-        technologies: [
+          "Jeu multijoueur compétitif inspiré de Fortnite dans un univers Western, avec respawn jusqu'à la fin du timer, construction via ressources, score basé sur les kills, et présence d'un chat intra-équipe ainsi qu'un chat global. Les joueurs s'affrontent en équipes de 2.",        
+          technologies: [
           { name: 'Unreal Engine', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg' },
           //{ name: 'Blueprint', url: 'https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/Blueprints/' },
           //{ name: 'Multijoueur', url: 'https://docs.unrealengine.com/4.27/en-US/InteractiveExperiences/Networking/' },
@@ -479,10 +481,16 @@ export const projects = [
             {
         id: 15,
         title: "Shooter Coop Viking (défense de vagues)",
-        imageUrl: "/Portfolio_Ilyes_Najjari/media/bomberman/.jpg",
+        imageUrl: "/Portfolio_Ilyes_Najjari/media/Viking/Viking1.png",
         media: [
-          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/bomberman/.jpg" },
-          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/bomberman/.jpg" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Viking/Viking1.png" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Viking/Viking2.png" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Viking/Viking3.png" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Viking/Viking4.png" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Viking/Viking5.png" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Viking/Viking6.png" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Viking/Viking7.png" },
+
         ],
         link: "https://github.com/ilyesnajjari/",
         description:
@@ -518,7 +526,7 @@ export const personalInfo = {
   email: 'ilyes.najjari@hotmail.com',
   location: 'Carpentras, France / Québec, Canada',
   availability: 'Lundi au vendredi, 9h - 18h',
-  bio: "Étudiant en école d'ingénieur et en master d’informatique, rigoureux, passionné par les technologies, la finance et l'enseignement. J'ai une forte appétence pour l'algorithmique, le développement d'applications et les systèmes intelligents.",
+  bio: "Étudiant en école d'ingénieur et en master d’informatique, rigoureux, passionné par les technologies, la finance, la data et l'enseignement. J'ai une forte appétence pour l'algorithmique, le développement d'applications, les systèmes intelligents et l'analyse de données.",
   socials: {
     github: 'https://github.com/ilyesnajjari',
     linkedin: 'https://www.linkedin.com/in/ilyes-najjari',
@@ -628,6 +636,7 @@ export const skills = {
       { name: 'Kotlin', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg' },
       { name: 'Python', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
       { name: 'C++', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg' },
+      { name: 'C#', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg' },
       { name: 'Web Development (frontend/backend)', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
     ],
     tools: [
@@ -635,7 +644,12 @@ export const skills = {
       { name: 'Git', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
       { name: 'Firebase', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg' },
       { name: 'MATLAB', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg' },
-      { name: 'DevOps', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
+      { name: 'Docker (DevOps)', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
+      { name: 'AWS', url: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg' },
+      { name: 'Cloud Computing', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg' },
+      { name: 'Unity', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg' },
+      { name: 'Unreal Engine', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg' },
+      { name: 'Android Studio', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg' },
     ],
     management: [
       { name: 'Trello', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg' },
@@ -645,6 +659,15 @@ export const skills = {
       { name: 'SQL', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
       { name: 'NoSQL', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
     ],
+  dataScience: [
+  { name: 'scikit-learn', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg' },
+  { name: 'pandas', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg' },
+  { name: 'matplotlib', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg' },
+  { name: 'NumPy', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg' },
+  { name: 'Jupyter', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg' }
+],
+
+
   },
   soft: [
     'Autonomie',

@@ -15,5 +15,6 @@ git add .                           # Ajoute tous les fichiers modifiés
 git commit -m "modifs"             # Crée un commit avec un message
 git push                           # Envoie le code sur GitHub
 npm run build                      # Recompile le site pour la prod
+npm run preview
 npm run deploy                     # Envoie le site sur GitHub Pages
 */

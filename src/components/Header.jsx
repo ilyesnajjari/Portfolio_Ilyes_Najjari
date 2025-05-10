@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-container">
-        <Link to="/" className="logo">Ilyes NAJJARI</Link>
+        <Link to="/Portfolio_Ilyes_Najjari" className="logo">Ilyes NAJJARI</Link>
         <button className="menu-toggle" onClick={toggleMenu}>
           ☰
         </button>
