@@ -190,11 +190,18 @@
 
   /* Taille du logo GitHub */
   .github-logo {
-    width: 48px; /* Augmente la largeur du logo */
-    height: 48px; /* Augmente la hauteur du logo */
-    display: block; /* Assure que le logo est traité comme un bloc */
-    margin: 0 auto; /* Centre horizontalement le logo */
-  }
+  width: 48px;
+  height: 48px;
+  display: block; /* pour éviter les légers décalages */
+  margin: 0 auto; /* centre le logo à l'intérieur de son lien */
+}
+.logo-container {
+  display: flex;
+  justify-content: center; /* centre les logos horizontalement */
+  align-items: center;
+  gap: 40px; /* espace entre les deux logos */
+}
+
 
   /* Alignement des bulles CODE SOURCE et RÉSULTATS / DEMO */
   .project-demo,

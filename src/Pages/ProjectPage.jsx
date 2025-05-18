@@ -93,26 +93,45 @@ const ProjectPage = () => {
             </div>
           </div>
 
-          {/* Lien vers le code source */}
-          {project.link && (
-            <div className="bubble bg-light-bg p-4 rounded-lg shadow-md">
-              <h2 className="text-xl font-semibold mb-2 text-primary">Code Source :</h2>
-              <a
-                href={project.link}
-                className="flex items-center justify-center"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                  alt="GitHub Logo"
-                  className="github-logo"
-                />
-              </a>
-            </div>
-          )}
+{/* Lien vers le code source et site web */}
+{(project.link || project.site) && (
+  <div className="bubble bg-light-bg p-4 rounded-lg shadow-md">
+    <h2 className="text-xl font-semibold mb-2 text-primary">
+      Code Source{project.site ? ' et Site' : ''} :
+    </h2>
+    <div className="logo-container">
+      {project.link && (
+        <a
+          href={project.link}
+          className="flex items-center"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+            alt="GitHub Logo"
+            className="github-logo"
+          />
+        </a>
+      )}
+      {project.site && (
+        <a
+          href={project.site}
+          className="flex items-center"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/841/841364.png"
+            alt="Site Web"
+            className="github-logo"
+          />
+        </a>
+      )}
+    </div>
+  </div>
+)}
         </div>
-
         {/* Colonne droite : Grosse bulle Résultats/Demo */}
         {project.media && project.media.length > 0 && (
           <div className="bubble bg-light-bg p-4 rounded-lg shadow-md project-demo">

@@ -75,12 +75,42 @@ export const projects = [
           "Mise en page responsive pour tous les appareils."
         ],
       },
-    ],
-  },
-  {
-    section: 'Développement Logiciel',
-    projects: [
       {
+        id: 18,
+        title: "Application Cloud IMC",
+        imageUrl: "/Portfolio_Ilyes_Najjari/media/IMC/imc1.png", // à remplacer par ton visuel principal
+        media: [
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/IMC/imc1.png' }, // tu peux ajouter plusieurs images/screenshots
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/IMC/imc2.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/IMC/imc3.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/IMC/imc4.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/IMC/imc5.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/IMC/imc6.png' },
+
+        ],
+        link: "https://github.com/ilyesnajjari/imc-cloud-app", // lien GitHub réel
+        site: "https://imc-frontend-56wx.onrender.com", // lien vers le site web
+        description: "Application web cloud-native permettant de calculer l'Indice de Masse Corporelle (IMC), sauvegarder les résultats dans une base de données PostgreSQL, consulter un historique, et supprimer des entrées. L'application utilise FastAPI pour le backend et Streamlit pour le frontend, conteneurisée avec Docker et déployée sur Render.",
+        technologies: [
+          { name: "FastAPI", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+          { name: "Streamlit", url: "https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.svg" },
+          { name: "Docker", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+          { name: "PostgreSQL", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
+          { name: "Render", url: "https://render.com/images/logo.svg" },
+        ],
+        startDate: "Avril 2025",
+        endDate: "Mai 2025",
+        teamRole: "Développeur Full Stack",
+        challenges: [
+          "Création d'une API REST sécurisée avec FastAPI.",
+          "Interface utilisateur dynamique et responsive avec Streamlit.",
+          "Conteneurisation complète avec Docker pour faciliter le déploiement.",
+          "Gestion des données persistantes via PostgreSQL avec historique et suppression.",
+          "Déploiement cloud automatisé sur Render.",
+        ],
+      },
+
+{
         id: 4,
         title: 'Frigo Intelligent - Suggestion de Recettes',
         imageUrl: '/Portfolio_Ilyes_Najjari/media/Frigo/frigo.jpg',
@@ -111,8 +141,49 @@ export const projects = [
           "Gestion des dates de péremption et personnalisation selon les profils utilisateurs."
         ],
       },
+      {
+        id: 19,
+        title: "Reco Films App",
+        imageUrl: "/Portfolio_Ilyes_Najjari/media/Kubernetes/kubernetes1.png", 
+        media: [
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Kubernetes/kubernetes1.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Kubernetes/kubernetes2.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Kubernetes/kubernetes3.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Kubernetes/kubernetes4.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Kubernetes/kubernetes5.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Kubernetes/kubernetes6.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Kubernetes/kubernetes7.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Kubernetes/kubernetes8.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Kubernetes/kubernetes9.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Kubernetes/kubernetes10.png' },
+        ],
+        link: "https://github.com/ilyesnajjari/reco-films-app",
+        site: "",
+        description: "Reco Films App est une application web de recommandation de films, développée dans un cadre pédagogique. Elle repose sur une architecture microservices conteneurisée avec Docker et orchestrée avec Kubernetes. L'application permet aux utilisateurs de créer un compte, rechercher des films, obtenir des recommandations personnalisées, noter des films et consulter leur historique.",
+        technologies: [
+          { name: "FastAPI", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+          { name: "Streamlit", url: "https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.svg" },
+          { name: "Docker", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+          { name: "Kubernetes", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" },
+          { name: "PostgreSQL", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
+        ],
+        startDate: "Mai 2025",
+        endDate: "En cours",
+        teamRole: "Développeur Full Stack & DevOps",
+        challenges: [
+          "Conception et orchestration d'une architecture microservices avec Kubernetes.",
+          "Implémentation d'API REST modulaires avec FastAPI.",
+          "Développement d'une interface intuitive avec Streamlit.",
+          "Gestion de la persistance et des relations entre utilisateurs, films et notations avec PostgreSQL.",
+          "Automatisation des déploiements avec Docker et Helm.",
+          "Mise en place d'un système de recommandations personnalisées.",
+        ],
+      },
+
     ],
   },
+  
+
   {
     section: 'Data & Dashboard',
     projects: [
@@ -146,6 +217,61 @@ export const projects = [
           "Génération automatique de rapports journaliers et mensuels."
         ],
       },
+       {
+        id: 16,
+        title: 'Analyse de Données Boursières - ARIMA & Moyennes Mobiles',
+        imageUrl: '/Portfolio_Ilyes_Najjari/media/Stock/stock1.png',
+        media: [
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Stock/stock1.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Stock/stock2.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Stock/stock3.png' }
+        ],
+        link: 'https://github.com/ilyesnajjari/Quantitative-Finance-Portfolio/tree/main/stock-data-analysis',
+        description: 'Projet Python visant à analyser des séries temporelles financières à partir de données Yahoo Finance : calcul de moyennes mobiles, modélisation ARIMA, prévisions et visualisation.',
+        technologies: [
+          { name: 'Python', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+          { name: 'Pandas', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg' },
+          { name: 'Matplotlib', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg' },
+          { name: 'Statsmodels', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+          { name: 'yFinance', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' }
+        ],
+        startDate: 'Mars 2025',
+        endDate: 'Avril 2025',
+        teamRole: 'Data Analyst Python',
+        challenges: [
+          'Utilisation de yFinance pour extraire des données financières propres.',
+          'Implémentation et interprétation d’un modèle ARIMA.',
+          'Visualisation des tendances et des prédictions avec Matplotlib.'
+        ]
+      },
+      {
+        id: 17,
+        title: 'FIFA Player Price Tracker - Analyse de Données de Marché',
+        imageUrl: '/Portfolio_Ilyes_Najjari/media/FIFA_Player/fifa1.png',
+        media: [
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/FIFA_Player/fifa1.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/FIFA_Player/fifa2.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/FIFA_Player/fifa4.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/FIFA_Player/fifa5.png' },
+
+        ],
+        link: 'https://github.com/ilyesnajjari/Quantitative-Finance-Portfolio/tree/main/fifa_player_price_tracker',
+        description: 'Suivi de l’évolution des prix des joueurs FIFA Ultimate Team à travers une collecte de données automatisée et une analyse temporelle pour repérer les opportunités d’achat/vente.',
+        technologies: [
+          { name: 'Python', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+          { name: 'Requests', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+          { name: 'Pandas', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg' },
+          { name: 'Matplotlib', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg' }
+        ],
+        startDate: 'Mars 2025',
+        endDate: 'Avril 2025',
+        teamRole: 'Développeur Python / Analyste Données',
+        challenges: [
+          'Extraction et parsing de données via scraping/API.',
+          'Nettoyage et formatage des datasets pour analyse temporelle.',
+          'Création de visualisations pour identifier les fluctuations de prix.'
+        ]
+      }
     ],
   },
   {
@@ -205,66 +331,7 @@ export const projects = [
       },
     ],
   },
-  {
-    section: 'Développement en Finance',
-    projects: [
-      {
-        id: 16,
-        title: 'Analyse de Données Boursières - ARIMA & Moyennes Mobiles',
-        imageUrl: '/Portfolio_Ilyes_Najjari/media/Stock/stock1.png',
-        media: [
-          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Stock/stock1.png' },
-          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Stock/stock2.png' },
-          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Stock/stock3.png' }
-        ],
-        link: 'https://github.com/ilyesnajjari/Quantitative-Finance-Portfolio/tree/main/stock-data-analysis',
-        description: 'Projet Python visant à analyser des séries temporelles financières à partir de données Yahoo Finance : calcul de moyennes mobiles, modélisation ARIMA, prévisions et visualisation.',
-        technologies: [
-          { name: 'Python', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
-          { name: 'Pandas', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg' },
-          { name: 'Matplotlib', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg' },
-          { name: 'Statsmodels', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
-          { name: 'yFinance', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' }
-        ],
-        startDate: 'Mars 2025',
-        endDate: 'Avril 2025',
-        teamRole: 'Data Analyst Python',
-        challenges: [
-          'Utilisation de yFinance pour extraire des données financières propres.',
-          'Implémentation et interprétation d’un modèle ARIMA.',
-          'Visualisation des tendances et des prédictions avec Matplotlib.'
-        ]
-      },
-      {
-        id: 17,
-        title: 'FIFA Player Price Tracker - Analyse de Données de Marché',
-        imageUrl: '/Portfolio_Ilyes_Najjari/media/FIFA_Player/fifa1.png',
-        media: [
-          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/FIFA_Player/fifa1.png' },
-          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/FIFA_Player/fifa2.png' },
-          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/FIFA_Player/fifa4.png' },
-          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/FIFA_Player/fifa5.png' },
 
-        ],
-        link: 'https://github.com/ilyesnajjari/Quantitative-Finance-Portfolio/tree/main/fifa_player_price_tracker',
-        description: 'Suivi de l’évolution des prix des joueurs FIFA Ultimate Team à travers une collecte de données automatisée et une analyse temporelle pour repérer les opportunités d’achat/vente.',
-        technologies: [
-          { name: 'Python', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
-          { name: 'Requests', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
-          { name: 'Pandas', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg' },
-          { name: 'Matplotlib', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg' }
-        ],
-        startDate: 'Mars 2025',
-        endDate: 'Avril 2025',
-        teamRole: 'Développeur Python / Analyste Données',
-        challenges: [
-          'Extraction et parsing de données via scraping/API.',
-          'Nettoyage et formatage des datasets pour analyse temporelle.',
-          'Création de visualisations pour identifier les fluctuations de prix.'
-        ]
-      }
-    ]
-  },
   {
     section: "Développement de Jeux Vidéo",
     projects: [
@@ -516,7 +583,7 @@ export const projects = [
   
 ];
 
-//DERNIERE ID 17
+//DERNIERE ID 19
 
 
 // Données personnelles (à personnaliser)
@@ -524,8 +591,8 @@ export const personalInfo = {
   name: 'Ilyes Najjari',
   title: 'Développeur Fullstack & Ingénieur Financier',
   email: 'ilyes.najjari@hotmail.com',
-  location: 'Carpentras, France / Québec, Canada',
-  availability: 'Lundi au vendredi, 9h - 18h',
+  location: 'France ',
+  availability: '',
   bio: "Étudiant en école d'ingénieur et en master d’informatique, rigoureux, passionné par les technologies, la finance, la data et l'enseignement. J'ai une forte appétence pour l'algorithmique, le développement d'applications, les systèmes intelligents et l'analyse de données.",
   socials: {
     github: 'https://github.com/ilyesnajjari',
@@ -632,42 +699,51 @@ export const skills = {
   hardskills: {
     coding: [
       { name: 'JavaScript', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
+      { name: 'TypeScript', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
       { name: 'Java', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' },
       { name: 'Kotlin', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg' },
       { name: 'Python', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
       { name: 'C++', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg' },
       { name: 'C#', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg' },
-      { name: 'Web Development (frontend/backend)', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
+      { name: 'HTML5', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
+      { name: 'CSS3', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
+      { name: 'Blueprint', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg' },
+      { name: 'Shell/Bash', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg' },
     ],
     tools: [
-      { name: 'GitHub', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' },
-      { name: 'Git', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
+      { name: 'React', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+      { name: 'Node.js', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
+      { name: 'Express', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg' },
+      { name: 'Docker (DevOps)', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
+      { name: 'Kubernetes', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg' },
       { name: 'Firebase', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg' },
       { name: 'MATLAB', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg' },
-      { name: 'Docker (DevOps)', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
       { name: 'AWS', url: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg' },
       { name: 'Cloud Computing', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg' },
       { name: 'Unity', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg' },
       { name: 'Unreal Engine', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg' },
       { name: 'Android Studio', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg' },
+      { name: 'Render', url: 'https://render.com/images/logo.svg' },
     ],
     management: [
       { name: 'Trello', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg' },
       { name: 'Slack', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg' },
-      { name: 'Pack Office', url: 'https://cdn-icons-png.flaticon.com/512/732/732221.png' }    ],
+      { name: 'Pack Office', url: 'https://cdn-icons-png.flaticon.com/512/732/732221.png' },
+      { name: 'Agile/Scrum', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scrum/scrum-original.svg' },
+    ],
     databases: [
       { name: 'SQL', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
       { name: 'NoSQL', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
+      { name: 'PostgreSQL', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
+      { name: 'SQLite', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg' },
     ],
-  dataScience: [
-  { name: 'scikit-learn', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg' },
-  { name: 'pandas', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg' },
-  { name: 'matplotlib', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg' },
-  { name: 'NumPy', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg' },
-  { name: 'Jupyter', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg' }
-],
-
-
+    dataScience: [
+      { name: 'scikit-learn', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg' },
+      { name: 'pandas', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg' },
+      { name: 'matplotlib', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg' },
+      { name: 'NumPy', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg' },
+      { name: 'Jupyter', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg' }
+    ],
   },
   soft: [
     'Autonomie',
