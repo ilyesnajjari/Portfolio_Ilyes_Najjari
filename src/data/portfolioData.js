@@ -271,7 +271,37 @@ export const projects = [
           'Nettoyage et formatage des datasets pour analyse temporelle.',
           'Création de visualisations pour identifier les fluctuations de prix.'
         ]
-      }
+      },
+      {
+  id: 20,
+  title: 'Finance Machine Learning - Prédiction de Volatilité & Optimisation de Portefeuille',
+  imageUrl: '/Portfolio_Ilyes_Najjari/media/FinanceML/finance1.png',
+  media: [
+    { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/FinanceML/finance1.png' },
+    { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/FinanceML/finance2.png' },
+    { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/FinanceML/finance3.png' },
+    { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/FinanceML/finance4.png' }
+  ],
+  link: 'https://github.com/ilyesnajjari/Finance_data_science',
+  description: 'Projet de data science visant à prédire la volatilité boursière à court terme et réallouer dynamiquement un portefeuille multi-actifs à l’aide d’algorithmes de Machine Learning (scikit-learn, RAPIDS), dans un environnement local ou cloud.',
+  technologies: [
+    { name: 'Python', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+    { name: 'Pandas', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg' },
+    { name: 'scikit-learn', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg' },
+    { name: 'RAPIDS', url: 'https://raw.githubusercontent.com/rapidsai/rapidsai/main/docs/img/logo.svg' },
+    { name: 'Streamlit', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg' }
+  ],
+  startDate: 'Mai 2025',
+  endDate: 'Mai 2025',
+  teamRole: 'Data Scientist',
+  challenges: [
+    "Prévision de la volatilité via des modèles ML (régression, classification).",
+    "Optimisation de portefeuille basée sur les prévisions.",
+    "Utilisation de cuDF/cuML pour l'accélération GPU.",
+    "Visualisation des résultats via Streamlit."
+  ]
+}
+
     ],
   },
   {
@@ -583,7 +613,7 @@ export const projects = [
   
 ];
 
-//DERNIERE ID 19
+//DERNIERE ID 20
 
 
 // Données personnelles (à personnaliser)
