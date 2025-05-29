@@ -288,7 +288,7 @@ export const projects = [
     { name: 'Python', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
     { name: 'Pandas', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg' },
     { name: 'scikit-learn', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg' },
-    { name: 'RAPIDS', url: 'https://raw.githubusercontent.com/rapidsai/rapidsai/main/docs/img/logo.svg' },
+    { name: 'RAPIDS', url: 'https://cdn.jsdelivr.net/gh/feathericons/feather@main/icons/cpu.svg' },
     { name: 'Streamlit', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg' }
   ],
   startDate: 'Mai 2025',
@@ -753,13 +753,13 @@ export const skills = {
       { name: 'Unity', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg' },
       { name: 'Unreal Engine', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg' },
       { name: 'Android Studio', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg' },
-      { name: 'Render', url: 'https://render.com/images/logo.svg' },
+      { name: 'Render', url: 'https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/render.svg' },,
     ],
     management: [
       { name: 'Trello', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg' },
       { name: 'Slack', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg' },
       { name: 'Pack Office', url: 'https://cdn-icons-png.flaticon.com/512/732/732221.png' },
-      { name: 'Agile/Scrum', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scrum/scrum-original.svg' },
+      { name: 'Agile/Scrum', url: 'https://cdn-icons-png.flaticon.com/512/2721/2721296.png' },
     ],
     databases: [
       { name: 'SQL', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
@@ -772,8 +772,9 @@ export const skills = {
       { name: 'pandas', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg' },
       { name: 'matplotlib', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg' },
       { name: 'NumPy', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg' },
-      { name: 'Jupyter', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg' }
-    ],
+      { name: 'Jupyter', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg' },
+{ name: 'RAPIDS', url: 'https://cdn.jsdelivr.net/gh/feathericons/feather@main/icons/cpu.svg' }
+],
   },
   soft: [
     'Autonomie',
