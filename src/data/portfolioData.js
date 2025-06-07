@@ -217,6 +217,41 @@ export const projects = [
           "Génération automatique de rapports journaliers et mensuels."
         ],
       },
+          {
+      id: 20,
+      title: 'Détection de Fraude Bancaire - Comparaison Spark, RAPIDS & Sklearn',
+      imageUrl: '/Portfolio_Ilyes_Najjari/media/Fraude_detection/fraude_detection1.png',
+      media: [
+        { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Fraude_detection/fraude_detection1.png' },
+        { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Fraude_detection/fraude_detection2.png' },
+        { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Fraude_detection/fraude_detection3.png' },
+        { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Fraude_detection/fraude_detection4.png' },
+        { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Fraude_detection/fraude_detection5.png' },
+        { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Fraude_detection/fraude_detection6.png' },
+        { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Fraude_detection/fraude_detection7.png' },
+      ],
+      link: 'https://github.com/ilyesnajjari/fraude-detection',
+      description: "Projet comparatif d’optimisation de la détection de fraude bancaire sur le dataset Kaggle 'Credit Card Fraud Detection'. Analyse et comparaison des performances entre Spark MLlib (CPU), RAPIDS cuML (GPU) et Scikit-learn (CPU), dans une architecture microservices Python (FastAPI) orchestrée via Docker et Kubernetes pour l'entraînement, la prédiction et la comparaison modulaire des modèles.",
+      technologies: [
+        { name: 'Python', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+        { name: 'FastAPI', url: 'https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png' },
+        { name: 'Docker', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
+        { name: 'Kubernetes', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg' },
+        { name: 'Apache Spark', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg' }, 
+        { name: 'RAPIDS', url: 'https://cdn.jsdelivr.net/gh/feathericons/feather@main/icons/cpu.svg' }, 
+        { name: 'Scikit-learn', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg' },
+      ],
+      startDate: 'Mai 2025',
+      endDate: 'Juin 2025',
+      teamRole: 'Développeur Data Science & Backend',
+      challenges: [
+        "Mise en place d’une architecture microservices scalable avec FastAPI et Docker.",
+        "Orchestration des services avec Kubernetes pour déploiement cloud.",
+        "Optimisation des performances entre CPU (Spark, Sklearn) et GPU (RAPIDS).",
+        "Gestion de la modularité entre entraînement, prédiction et comparaison de modèles.",
+        "Traitement et prétraitement des données volumineuses du dataset Kaggle.",
+      ],
+    },
        {
         id: 16,
         title: 'Analyse de Données Boursières - ARIMA & Moyennes Mobiles',
@@ -607,13 +642,42 @@ export const projects = [
           'Système d’armes coopératif avec partage de ressources.',
           'Design d’un environnement immersif et stratégique.'
         ]
-      }
+      },
+      {
+  id: 21,
+  title: "Chromaze - Party-game multijoueur dans un labyrinthe",
+  imageUrl: "/Portfolio_Ilyes_Najjari/media/Chromaze/Chromaze1.png",
+  media: [
+    { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Chromaze/Chromaze1.png" },
+    { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Chromaze/Chromaze2.png" },
+    { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Chromaze/Chromaze3.png" },
+    { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Chromaze/Chromaze4.png" },
+    { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Chromaze/Chromaze5.png" },
+  ],
+  link: "https://github.com/ilyesnajjari/chromaze",
+  description:
+    "Chromaze est un party-game compétitif pour deux joueurs dans un labyrinthe. Le sol est constitué de tuiles que les joueurs colorent en marchant dessus. Au bout d’un temps imparti, celui qui a coloré le plus de cases remporte la partie. Ennemis et bonus viennent pimenter la partie. Inspiré de jeux classiques comme Pac-Man et QiX, avec une vue en plongée et contrôles à la manette.",
+  technologies: [
+    { name: 'Unity', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg' },
+    { name: 'C#', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg' },
+  ],
+  startDate: "Avril 2025",
+  endDate: "Mai 2025",
+  teamRole: "Développeur gameplay & réseau",
+  challenges: [
+    "Implémentation du système de recoloration dynamique des tuiles par joueur.",
+    "Gestion des ennemis perturbateurs et des bonus collectables.",
+    "Optimisation du gameplay compétitif en temps limité.",
+    "Développement du mode multijoueur local en LAN avec synchronisation des états.",
+    "Design d’une interface claire avec vue en plongée et contrôles manette."
+  ],
+},
     ]
   }
   
 ];
 
-//DERNIERE ID 20
+//DERNIERE ID 22
 
 
 // Données personnelles (à personnaliser)
