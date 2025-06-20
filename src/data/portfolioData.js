@@ -113,7 +113,7 @@ export const projects = [
 {
         id: 4,
         title: 'Frigo Intelligent - Suggestion de Recettes',
-        imageUrl: '/Portfolio_Ilyes_Najjari/media/Frigo/frigo.jpg',
+        imageUrl: '/Portfolio_Ilyes_Najjari/media/Frigo/frigo1.jpg',
         media: [
           { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Frigo/frigo1.jpg' },
           { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Frigo/frigo2.jpg' },
