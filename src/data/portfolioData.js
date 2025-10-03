@@ -673,11 +673,53 @@ export const projects = [
   ],
 },
     ]
+  },
+  
+  {
+    section: 'Intelligence Artificielle',
+    projects: [
+      {
+        id: 22,
+        title: 'Catalogue Films & Séries avec Assistant IA Spécialisé',
+        imageUrl: '/Portfolio_Ilyes_Najjari/media/chatbot_film/chatbot_film8.png',
+        media: [
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/chatbot_film/chatbot_film1.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/chatbot_film/chatbot_film2.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/chatbot_film/chatbot_film3.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/chatbot_film/chatbot_film4.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/chatbot_film/chatbot_film5.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/chatbot_film/chatbot_film6.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/chatbot_film/chatbot_film7.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/chatbot_film/chatbot_film8.png' },
+        ],
+        link: 'https://github.com/ilyesnajjari/catalogue-films-series-ai',
+        description: 'Plateforme complète de catalogage de films et séries avec assistant IA spécialisé. L\'application permet de gérer une base de données de contenus audiovisuels, suggérer des recommandations personnalisées, analyser les tendances du moment, et ajouter de nouveaux films/séries avec leurs métadonnées. L\'assistant IA répond aux questions sur les contenus et guide les utilisateurs dans leurs découvertes.',
+        technologies: [
+          { name: 'Python', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+          { name: 'JavaScript', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
+          { name: 'Ollama', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+          { name: 'H2', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' },
+          { name: 'Angular', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg' },
+        ],
+        startDate: 'Septembre 2024',
+        endDate: 'Novembre 2024',
+        teamRole: 'Développeur Fullstack & IA',
+        challenges: [
+          "Création d'un système de recommandation hybride basé sur le contenu et le filtrage collaboratif.",
+          "Intégration d'un assistant IA spécialisé capable de discuter de films et séries avec expertise.",
+          "Développement d'un système d'analyse de tendances en temps réel.",
+          "Interface utilisateur intuitive pour l'ajout et la gestion de contenus avec métadonnées complètes.",
+          "Optimisation des performances pour des recherches rapides dans une large base de données."
+        ],
+      },
+
+
+    ],
   }
   
 ];
 
-//DERNIERE ID 22
+//DERNIERE ID 24
 
 
 // Données personnelles (à personnaliser)
