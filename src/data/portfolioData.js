@@ -54,7 +54,7 @@ export const projects = [
           { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Auto_email/Auto_email9.png' },
           { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Auto_email/Auto_email10.png' },
         ],
-        link: 'https://github.com/ilyesnajjari/auto-email-location',
+        link: 'https://github.com/ilyesnajjari/Email_auto',
         description: 'Application intelligente de gestion automatisée des demandes de location de véhicules. Le système récupère automatiquement les emails via IMAP, extrait les informations clients (nom, téléphone, ville, dates, type de véhicule) grâce au NLP avec SpaCy, les stocke en base de données, permet la validation manuelle et envoie automatiquement les demandes aux sous-traitants disponibles par ville.',
         technologies: [
           { name: 'Python', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
