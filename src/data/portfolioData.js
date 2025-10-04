@@ -2,6 +2,85 @@
 
 export const projects = [
   {
+    section: 'Intelligence Artificielle',
+    projects: [
+      {
+        id: 22,
+        title: 'Catalogue Films & Séries avec Assistant IA Spécialisé',
+        imageUrl: '/Portfolio_Ilyes_Najjari/media/chatbot_film/chatbot_film8.png',
+        media: [
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/chatbot_film/chatbot_film1.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/chatbot_film/chatbot_film2.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/chatbot_film/chatbot_film3.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/chatbot_film/chatbot_film4.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/chatbot_film/chatbot_film5.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/chatbot_film/chatbot_film6.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/chatbot_film/chatbot_film7.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/chatbot_film/chatbot_film8.png' },
+        ],
+        link: 'https://github.com/ilyesnajjari/catalogue-films-series-ai',
+        description: 'Plateforme complète de catalogage de films et séries avec assistant IA spécialisé. L\'application permet de gérer une base de données de contenus audiovisuels, suggérer des recommandations personnalisées, analyser les tendances du moment, et ajouter de nouveaux films/séries avec leurs métadonnées. L\'assistant IA répond aux questions sur les contenus et guide les utilisateurs dans leurs découvertes.',
+        technologies: [
+          { name: 'Python', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+          { name: 'JavaScript', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
+          { name: 'Ollama', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+          { name: 'H2', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' },
+          { name: 'Angular', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg' },
+        ],
+        startDate: 'Septembre 2024',
+        endDate: 'Novembre 2024',
+        teamRole: 'Développeur Fullstack & IA',
+        challenges: [
+          "Création d'un système de recommandation hybride basé sur le contenu et le filtrage collaboratif.",
+          "Intégration d'un assistant IA spécialisé capable de discuter de films et séries avec expertise.",
+          "Développement d'un système d'analyse de tendances en temps réel.",
+          "Interface utilisateur intuitive pour l'ajout et la gestion de contenus avec métadonnées complètes.",
+          "Optimisation des performances pour des recherches rapides dans une large base de données."
+        ],
+      },
+      {
+        id: 23,
+        title: 'Auto Email - Gestion des demandes de location',
+        imageUrl: '/Portfolio_Ilyes_Najjari/media/auto_email/auto_email8.png',
+        media: [
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/auto_email/auto_email1.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/auto_email/auto_email2.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/auto_email/auto_email3.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/auto_email/auto_email4.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/auto_email/auto_email5.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/auto_email/auto_email6.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/auto_email/auto_email7.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/auto_email/auto_email8.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/auto_email/auto_email9.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/auto_email/auto_email10.png' },
+        ],
+        link: 'https://github.com/ilyesnajjari/auto-email-location',
+        description: 'Application intelligente de gestion automatisée des demandes de location de véhicules. Le système récupère automatiquement les emails via IMAP, extrait les informations clients (nom, téléphone, ville, dates, type de véhicule) grâce au NLP avec SpaCy, les stocke en base de données, permet la validation manuelle et envoie automatiquement les demandes aux sous-traitants disponibles par ville.',
+        technologies: [
+          { name: 'Python', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+          { name: 'SpaCy', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+          { name: 'SQLite', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg' },
+          { name: 'IMAP', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+          { name: 'Regex', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+          { name: 'Gmail API', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg' },
+        ],
+        startDate: 'Octobre 2024',
+        endDate: 'Décembre 2024',
+        teamRole: 'Développeur IA & Automatisation',
+        challenges: [
+          "Extraction d'informations précises depuis des emails non structurés avec SpaCy et regex.",
+          "Gestion asynchrone des emails pour éviter de bloquer le serveur.",
+          "Système de validation manuelle avec interface utilisateur intuitive.",
+          "Automatisation de l'envoi aux sous-traitants par ville avec gestion des disponibilités.",
+          "Architecture modulaire permettant l'ajout de nouveaux algorithmes NLP (GPT, etc.).",
+          "Gestion multi-villes et multi-sous-traitants avec import depuis Excel/Google Sheets."
+        ],
+      },
+
+
+    ],
+  },
+  {
     section: 'Développement Web',
     projects: [
       {
@@ -675,51 +754,11 @@ export const projects = [
     ]
   },
   
-  {
-    section: 'Intelligence Artificielle',
-    projects: [
-      {
-        id: 22,
-        title: 'Catalogue Films & Séries avec Assistant IA Spécialisé',
-        imageUrl: '/Portfolio_Ilyes_Najjari/media/chatbot_film/chatbot_film8.png',
-        media: [
-          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/chatbot_film/chatbot_film1.png' },
-          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/chatbot_film/chatbot_film2.png' },
-          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/chatbot_film/chatbot_film3.png' },
-          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/chatbot_film/chatbot_film4.png' },
-          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/chatbot_film/chatbot_film5.png' },
-          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/chatbot_film/chatbot_film6.png' },
-          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/chatbot_film/chatbot_film7.png' },
-          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/chatbot_film/chatbot_film8.png' },
-        ],
-        link: 'https://github.com/ilyesnajjari/catalogue-films-series-ai',
-        description: 'Plateforme complète de catalogage de films et séries avec assistant IA spécialisé. L\'application permet de gérer une base de données de contenus audiovisuels, suggérer des recommandations personnalisées, analyser les tendances du moment, et ajouter de nouveaux films/séries avec leurs métadonnées. L\'assistant IA répond aux questions sur les contenus et guide les utilisateurs dans leurs découvertes.',
-        technologies: [
-          { name: 'Python', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
-          { name: 'JavaScript', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
-          { name: 'Ollama', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
-          { name: 'H2', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' },
-          { name: 'Angular', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg' },
-        ],
-        startDate: 'Septembre 2024',
-        endDate: 'Novembre 2024',
-        teamRole: 'Développeur Fullstack & IA',
-        challenges: [
-          "Création d'un système de recommandation hybride basé sur le contenu et le filtrage collaboratif.",
-          "Intégration d'un assistant IA spécialisé capable de discuter de films et séries avec expertise.",
-          "Développement d'un système d'analyse de tendances en temps réel.",
-          "Interface utilisateur intuitive pour l'ajout et la gestion de contenus avec métadonnées complètes.",
-          "Optimisation des performances pour des recherches rapides dans une large base de données."
-        ],
-      },
-
-
-    ],
-  }
+  
   
 ];
 
-//DERNIERE ID 24
+//DERNIERE ID 23
 
 
 // Données personnelles (à personnaliser)
