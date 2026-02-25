@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import './Contact.css'; // Assurez-vous que les styles sont bien importés
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -6,9 +7,13 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
   return (
-    <div className="contact-container">
-
-      <div className="contact-card">
+    <motion.div
+      className="contact-container"
+      initial={{ opacity: 0, scale: 0.95 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.95 }}
+      transition={{ duration: 0.4 }}
+    >      <div className="contact-card">
         <h1 className="text-3xl font-bold text-primary sm:text-4xl text-center">Contactez-moi</h1>
         <p className="mt-4 text-lg text-gray-600 text-center">
           Retrouvez mes coordonnées ci-dessous pour me contacter ou télécharger mon CV.
@@ -54,7 +59,7 @@ const Contact = () => {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

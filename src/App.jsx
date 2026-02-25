@@ -1,22 +1,39 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { Suspense } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Home from './Pages/Home';
-import About from './Pages/About';
-import Contact from './Pages/Contact';
-import ProjectPage from './Pages/ProjectPage';
-import { projects } from './data/portfolioData'; // 👈 Assurez-vous que 'projects' est exporté
+import ScrollToTop from './components/ScrollToTop';
+import { projects } from './data/portfolioData';
+
+// Lazy loading for pages
+const Home = React.lazy(() => import('./Pages/Home'));
+const About = React.lazy(() => import('./Pages/About'));
+const Contact = React.lazy(() => import('./Pages/Contact'));
+const ProjectPage = React.lazy(() => import('./Pages/ProjectPage'));
+
+const AnimatedRoutes = () => {
+  const location = useLocation();
+  return (
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route path="/Portfolio_Ilyes_Najjari" element={<Home projects={projects} />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/page/:id" element={<ProjectPage />} />
+      </Routes>
+    </AnimatePresence>
+  );
+};
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Header />
-      <Routes>
-        <Route path="/Portfolio_Ilyes_Najjari" element={<Home projects={projects} />} /> {/* 👈 On passe les projets ici */}
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/page/:id" element={<ProjectPage />} /> {/* Modification ici */}
-      </Routes>
+      <Suspense fallback={<div style={{ height: "100vh", display: "flex", justifyContent: "center", alignItems: "center", color: "white" }}>Chargement...</div>}>
+        <AnimatedRoutes />
+      </Suspense>
       <Footer />
     </Router>
   );

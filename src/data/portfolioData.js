@@ -5,6 +5,80 @@ export const projects = [
     section: 'Intelligence Artificielle',
     projects: [
       {
+        id: 25,
+        title: 'Projet Dragon - Plateforme Web de Génération de Documentation par IA',
+        imageUrl: '/Portfolio_Ilyes_Najjari/media/Dragon/detail_project_complete.png',
+        media: [
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Dragon/premiere_connexion.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Dragon/page_connexion.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Dragon/creation_user.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Dragon/page_admin_vide.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Dragon/page_projet_user.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Dragon/page_project.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Dragon/creation_projet_1.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Dragon/creation_projet_2.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Dragon/project_detail_chargement.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Dragon/detail_project_complete.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Dragon/modifier_projet.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Dragon/projet_mode_sombre.png' }
+        ],
+        link: 'https://github.com/ilyesnajjari/projet-dragon',
+        description: "Application web fullstack permettant d'automatiser la génération de documentation technique à partir de dépôts GitLab grâce à l'intelligence artificielle. L'outil intègre un tableau de bord pour la supervision en temps réel, un système d'initialisation de projets avec analyse via Tree-sitter, et une génération intelligente reposant sur des modèles LLM. L'architecture microservices assure une gestion autonome et stateful des documentations générées.",
+        technologies: [
+          { name: 'Angular', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg' },
+          { name: 'Spring Boot (Java 21)', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg' },
+          { name: 'Python (FastAPI)', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+          { name: 'Ollama & llama.cpp', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg' },
+          { name: 'GitLab API', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg' },
+          { name: 'H2', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' }
+        ],
+        startDate: 'Septembre 2025',
+        endDate: 'Février 2026',
+        teamRole: 'Développeur Fullstack & IA',
+        challenges: [
+          "Optimisation de l'infrastructure et contournement de l'instabilité des tunnels SSH vers le GPU distant via une conteneurisation complète de l'application.",
+          "Mise en place de stratégies de Prompt Engineering (Few-Shot Prompting) et de couches de validation pour contrer les hallucinations et le manque de déterminisme des LLM.",
+          "Développement d'une intelligence relationnelle capable d'analyser le code en profondeur via la création d'un graphe de dépendances acyclique (DAG) et un 'RelationResolver'.",
+          "Accélération drastique des performances de génération en migrant le moteur d'inférence vers llama.cpp couplé à un système de batching GPU intelligent.",
+          "Refonte de l'architecture IA pour la rendre 'Stateful' avec persistance de l'état des projets en local."
+        ],
+      },
+      {
+        id: 26,
+        title: 'Projet LION - Pipeline DevOps de Documentation Autonome',
+        imageUrl: '/Portfolio_Ilyes_Najjari/media/Lion/image%204.png',
+        media: [
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Lion/image.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Lion/image%202.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Lion/image%203.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Lion/image%204.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Lion/image%205.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Lion/image%206.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Lion/image%207.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Lion/image%208.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Lion/image%209.png' }
+        ],
+        link: 'https://github.com/ilyesnajjari/projet-lion',
+        description: "Solution DevOps d'automatisation documentaire (Livraison d'Informations Opérationnelles Normalisées) conçue pour résorber la dette technique. Le projet s'appuie sur une pipeline CI/CD GitLab qui exécute un processus en 5 étapes à chaque commit : pré-traitement, découpage contextuel via l'Abstract Syntax Tree (AST), inférence IA, injection sécurisée et commit automatique de la documentation mise à jour.",
+        technologies: [
+          { name: 'GitLab CI/CD', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg' },
+          { name: 'Docker', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
+          { name: 'Python', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+          { name: 'SonarQube', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sonarqube/sonarqube-original.svg' },
+          { name: 'Kubernetes (K3s)', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg' }
+        ],
+        startDate: 'Décembre 2025',
+        endDate: 'Février 2026',
+        teamRole: 'Ingénieur DevOps & LLMOps',
+        challenges: [
+          "Création d'un environnement d'exécution CI/CD Dockerisé totalement autonome intégrant Ollama, permettant le chargement du modèle d'IA au runtime (pull au runtime).",
+          "Extraction et manipulation d'Arbres Syntaxiques Abstraits (AST) complexes via Tree-sitter pour mapper précisément les changements de code à des blocs logiques documentables.",
+          "Mise en conformité avec les exigences industrielles de Clean Code imposées par SonarQube, nécessitant un refactoring structurel pour réduire la complexité cyclomatique.",
+          "Fusion intelligente (Knowledge preservation) assurant que l'injection du Markdown généré par l'IA ne corrompt pas la structure documentaire existante.",
+          "Orchestration d'une pipeline CI/CD complète gérant l'analyse parallèle de code source (XML, Python, etc.) avec une décomposition en micro-tâches pour une meilleure fiabilité."
+        ],
+      },
+      {
         id: 22,
         title: 'Catalogue Films & Séries avec Assistant IA Spécialisé',
         imageUrl: '/Portfolio_Ilyes_Najjari/media/chatbot_film/chatbot_film8.png',
@@ -107,11 +181,11 @@ export const projects = [
           "Système de messagerie privé/public.",
           "Affichage dynamique des utilisateurs en ligne."
         ],
-            },
+      },
       {
         id: 2,
         title: 'Click-to-Dial Extension Firefox',
-        imageUrl: '/Portfolio_Ilyes_Najjari/media/Click_to_Dial/click2dial0.png',
+        imageUrl: '/Portfolio_Ilyes_Najjari/media/Click_to_Dial/click2dial1.png',
         media: [
           { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Click_to_Dial/click2dial1.png' },
           { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Click_to_Dial/click2dial2.png' },
@@ -189,7 +263,7 @@ export const projects = [
         ],
       },
 
-{
+      {
         id: 4,
         title: 'Frigo Intelligent - Suggestion de Recettes',
         imageUrl: '/Portfolio_Ilyes_Najjari/media/Frigo/frigo1.jpg',
@@ -223,7 +297,7 @@ export const projects = [
       {
         id: 19,
         title: "Reco Films App",
-        imageUrl: "/Portfolio_Ilyes_Najjari/media/Kubernetes/kubernetes1.png", 
+        imageUrl: "/Portfolio_Ilyes_Najjari/media/Kubernetes/kubernetes1.png",
         media: [
           { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Kubernetes/kubernetes1.png' },
           { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Kubernetes/kubernetes2.png' },
@@ -261,11 +335,46 @@ export const projects = [
 
     ],
   },
-  
+
 
   {
     section: 'Data & Dashboard',
     projects: [
+      {
+        id: 24,
+        title: 'Dashboard Agricole Intelligent',
+        imageUrl: '/Portfolio_Ilyes_Najjari/media/Dashboard_agricole/Dashboard_agricole.png',
+        media: [
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Dashboard_agricole/Dashboard_agricole.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Dashboard_agricole/Dashboard_agricole1.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Dashboard_agricole/Dashboard_agricole2.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Dashboard_agricole/Dashboard_agricole3.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Dashboard_agricole/Dashboard_agricole4.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Dashboard_agricole/Dashboard_agricole5.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Dashboard_agricole/Dashboard_agricole6.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Dashboard_agricole/Dashboard_agricole7.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Dashboard_agricole/Dashboard_agricole8.png' }
+        ],
+        link: 'https://github.com/ilyesnajjari/dashboard-agricole-intelligent',
+        description: 'Tableau de bord complet sur mesure pour la gestion et l\'optimisation d\'exploitations agricoles. L\'application permet de suivre précisément les KPIs (recettes, dépenses, rendement, profit), de gérer les récoltes détaillées et les ventes sur les marchés. Elle intègre également un calendrier de planification phytosanitaire, un journal de bord interactif, un widget météo intelligent multi-villes et un module d\'Intelligence Artificielle local capable de prédire les récoltes, optimiser les stocks et fournir des alertes agronomiques prédictives.',
+        technologies: [
+          { name: 'Python (Django)', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+          { name: 'TypeScript', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
+          { name: 'Next.js / React', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg' },
+          { name: 'SQLite', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg' },
+          { name: 'Material-UI', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg' },
+        ],
+        startDate: 'Novembre 2025',
+        endDate: 'Février 2026',
+        teamRole: 'Développeur Fullstack & Data',
+        challenges: [
+          "Développement d'un module d'IA local (Prophet / Scikit-learn) pour la prévision des récoltes, des ventes et l'optimisation des stocks de l'exploitation.",
+          "Conception d'un calendrier de planification des traitements phytosanitaires couplé à un journal de bord pour le suivi quotidien.",
+          "Création d'un widget météo avancé avec gestion multi-villes, fonctionnement hors ligne et génération d'alertes agronomiques prédictives (ex: gel, traitements).",
+          "Mise en place d'une interface de visualisation de données complexe (Next.js / Material-UI) pour analyser facilement les rendements (kg/m²) et données financières.",
+          "Création de scripts d'automatisation pour le déploiement local, la gestion de l'environnement complet et la sauvegarde automatique de la base de données."
+        ],
+      },
       {
         id: 5,
         title: 'Call Reporting - Dashboard Télé-enquêteurs',
@@ -296,42 +405,42 @@ export const projects = [
           "Génération automatique de rapports journaliers et mensuels."
         ],
       },
-          {
-      id: 20,
-      title: 'Détection de Fraude Bancaire - Comparaison Spark, RAPIDS & Sklearn',
-      imageUrl: '/Portfolio_Ilyes_Najjari/media/Fraude_detection/fraude_detection1.png',
-      media: [
-        { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Fraude_detection/fraude_detection1.png' },
-        { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Fraude_detection/fraude_detection2.png' },
-        { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Fraude_detection/fraude_detection3.png' },
-        { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Fraude_detection/fraude_detection4.png' },
-        { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Fraude_detection/fraude_detection5.png' },
-        { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Fraude_detection/fraude_detection6.png' },
-        { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Fraude_detection/fraude_detection7.png' },
-      ],
-      link: 'https://github.com/ilyesnajjari/fraude-detection',
-      description: "Projet comparatif d’optimisation de la détection de fraude bancaire sur le dataset Kaggle 'Credit Card Fraud Detection'. Analyse et comparaison des performances entre Spark MLlib (CPU), RAPIDS cuML (GPU) et Scikit-learn (CPU), dans une architecture microservices Python (FastAPI) orchestrée via Docker et Kubernetes pour l'entraînement, la prédiction et la comparaison modulaire des modèles.",
-      technologies: [
-        { name: 'Python', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
-        { name: 'FastAPI', url: 'https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png' },
-        { name: 'Docker', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
-        { name: 'Kubernetes', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg' },
-        { name: 'Apache Spark', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg' }, 
-        { name: 'RAPIDS', url: 'https://cdn.jsdelivr.net/gh/feathericons/feather@main/icons/cpu.svg' }, 
-        { name: 'Scikit-learn', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg' },
-      ],
-      startDate: 'Mai 2025',
-      endDate: 'Juin 2025',
-      teamRole: 'Développeur Data Science & Backend',
-      challenges: [
-        "Mise en place d’une architecture microservices scalable avec FastAPI et Docker.",
-        "Orchestration des services avec Kubernetes pour déploiement cloud.",
-        "Optimisation des performances entre CPU (Spark, Sklearn) et GPU (RAPIDS).",
-        "Gestion de la modularité entre entraînement, prédiction et comparaison de modèles.",
-        "Traitement et prétraitement des données volumineuses du dataset Kaggle.",
-      ],
-    },
-       {
+      {
+        id: 20,
+        title: 'Détection de Fraude Bancaire - Comparaison Spark, RAPIDS & Sklearn',
+        imageUrl: '/Portfolio_Ilyes_Najjari/media/Fraude_detection/fraude_detection1.png',
+        media: [
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Fraude_detection/fraude_detection1.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Fraude_detection/fraude_detection2.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Fraude_detection/fraude_detection3.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Fraude_detection/fraude_detection4.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Fraude_detection/fraude_detection5.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Fraude_detection/fraude_detection6.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/Fraude_detection/fraude_detection7.png' },
+        ],
+        link: 'https://github.com/ilyesnajjari/fraude-detection',
+        description: "Projet comparatif d’optimisation de la détection de fraude bancaire sur le dataset Kaggle 'Credit Card Fraud Detection'. Analyse et comparaison des performances entre Spark MLlib (CPU), RAPIDS cuML (GPU) et Scikit-learn (CPU), dans une architecture microservices Python (FastAPI) orchestrée via Docker et Kubernetes pour l'entraînement, la prédiction et la comparaison modulaire des modèles.",
+        technologies: [
+          { name: 'Python', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+          { name: 'FastAPI', url: 'https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png' },
+          { name: 'Docker', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
+          { name: 'Kubernetes', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg' },
+          { name: 'Apache Spark', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg' },
+          { name: 'RAPIDS', url: 'https://cdn.jsdelivr.net/gh/feathericons/feather@main/icons/cpu.svg' },
+          { name: 'Scikit-learn', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg' },
+        ],
+        startDate: 'Mai 2025',
+        endDate: 'Juin 2025',
+        teamRole: 'Développeur Data Science & Backend',
+        challenges: [
+          "Mise en place d’une architecture microservices scalable avec FastAPI et Docker.",
+          "Orchestration des services avec Kubernetes pour déploiement cloud.",
+          "Optimisation des performances entre CPU (Spark, Sklearn) et GPU (RAPIDS).",
+          "Gestion de la modularité entre entraînement, prédiction et comparaison de modèles.",
+          "Traitement et prétraitement des données volumineuses du dataset Kaggle.",
+        ],
+      },
+      {
         id: 16,
         title: 'Analyse de Données Boursières - ARIMA & Moyennes Mobiles',
         imageUrl: '/Portfolio_Ilyes_Najjari/media/Stock/stock1.png',
@@ -387,34 +496,34 @@ export const projects = [
         ]
       },
       {
-  id: 20,
-  title: 'Finance Machine Learning - Prédiction de Volatilité & Optimisation de Portefeuille',
-  imageUrl: '/Portfolio_Ilyes_Najjari/media/FinanceML/finance1.png',
-  media: [
-    { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/FinanceML/finance1.png' },
-    { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/FinanceML/finance2.png' },
-    { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/FinanceML/finance3.png' },
-    { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/FinanceML/finance4.png' }
-  ],
-  link: 'https://github.com/ilyesnajjari/Finance_data_science',
-  description: 'Projet de data science visant à prédire la volatilité boursière à court terme et réallouer dynamiquement un portefeuille multi-actifs à l’aide d’algorithmes de Machine Learning (scikit-learn, RAPIDS), dans un environnement local ou cloud.',
-  technologies: [
-    { name: 'Python', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
-    { name: 'Pandas', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg' },
-    { name: 'scikit-learn', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg' },
-    { name: 'RAPIDS', url: 'https://cdn.jsdelivr.net/gh/feathericons/feather@main/icons/cpu.svg' },
-    { name: 'Streamlit', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg' }
-  ],
-  startDate: 'Mai 2025',
-  endDate: 'Mai 2025',
-  teamRole: 'Data Scientist',
-  challenges: [
-    "Prévision de la volatilité via des modèles ML (régression, classification).",
-    "Optimisation de portefeuille basée sur les prévisions.",
-    "Utilisation de cuDF/cuML pour l'accélération GPU.",
-    "Visualisation des résultats via Streamlit."
-  ]
-}
+        id: 20,
+        title: 'Finance Machine Learning - Prédiction de Volatilité & Optimisation de Portefeuille',
+        imageUrl: '/Portfolio_Ilyes_Najjari/media/FinanceML/finance1.png',
+        media: [
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/FinanceML/finance1.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/FinanceML/finance2.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/FinanceML/finance3.png' },
+          { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/FinanceML/finance4.png' }
+        ],
+        link: 'https://github.com/ilyesnajjari/Finance_data_science',
+        description: 'Projet de data science visant à prédire la volatilité boursière à court terme et réallouer dynamiquement un portefeuille multi-actifs à l’aide d’algorithmes de Machine Learning (scikit-learn, RAPIDS), dans un environnement local ou cloud.',
+        technologies: [
+          { name: 'Python', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+          { name: 'Pandas', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg' },
+          { name: 'scikit-learn', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg' },
+          { name: 'RAPIDS', url: 'https://cdn.jsdelivr.net/gh/feathericons/feather@main/icons/cpu.svg' },
+          { name: 'Streamlit', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg' }
+        ],
+        startDate: 'Mai 2025',
+        endDate: 'Mai 2025',
+        teamRole: 'Data Scientist',
+        challenges: [
+          "Prévision de la volatilité via des modèles ML (régression, classification).",
+          "Optimisation de portefeuille basée sur les prévisions.",
+          "Utilisation de cuDF/cuML pour l'accélération GPU.",
+          "Visualisation des résultats via Streamlit."
+        ]
+      }
 
     ],
   },
@@ -456,7 +565,7 @@ export const projects = [
           { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/AlbumPhoto/Album1.png' },
           { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/AlbumPhoto/Album2.png' },
           { type: 'image', src: '/Portfolio_Ilyes_Najjari/media/AlbumPhoto/Album3.png' },
-        //{ type: 'video', src: '/media/AlbumPhoto/Album1.mp4' }
+          //{ type: 'video', src: '/media/AlbumPhoto/Album1.mp4' }
         ],
         link: 'https://github.com/ilyesnajjari/Album_photos',
         description: "Application Android permettant de parcourir une galerie de photos, d'effectuer des zooms sur une image et de revenir à la vue d’ensemble par un zoom arrière. Navigation fluide avec balayage entre les photos.",
@@ -528,7 +637,7 @@ export const projects = [
         endDate: "2024-11",
         teamRole: "Développeur & Gameplay",
         challenges: [
-          
+
           "Génération automatique du niveau avec obstacles destructibles.",
           "Synchronisation des effets visuels et de la logique de collision."
         ]
@@ -658,8 +767,8 @@ export const projects = [
           "Création d’un système de lobby en ligne avec session persistante.",
           "Gestion des profils Steam et des invites amis."
         ]
-            },
-            {
+      },
+      {
         id: 14,
         title: "Battle Royale Western",
         imageUrl: "/Portfolio_Ilyes_Najjari/media/Western/Western.jpg",
@@ -671,8 +780,8 @@ export const projects = [
         ],
         link: "https://github.com/ilyesnajjari/",
         description:
-          "Jeu multijoueur compétitif inspiré de Fortnite dans un univers Western, avec respawn jusqu'à la fin du timer, construction via ressources, score basé sur les kills, et présence d'un chat intra-équipe ainsi qu'un chat global. Les joueurs s'affrontent en équipes de 2.",        
-          technologies: [
+          "Jeu multijoueur compétitif inspiré de Fortnite dans un univers Western, avec respawn jusqu'à la fin du timer, construction via ressources, score basé sur les kills, et présence d'un chat intra-équipe ainsi qu'un chat global. Les joueurs s'affrontent en équipes de 2.",
+        technologies: [
           { name: 'Unreal Engine', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg' },
           //{ name: 'Blueprint', url: 'https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/Blueprints/' },
           //{ name: 'Multijoueur', url: 'https://docs.unrealengine.com/4.27/en-US/InteractiveExperiences/Networking/' },
@@ -688,8 +797,8 @@ export const projects = [
           "Affichage des scores synchronisés en temps réel.",
           "Gestion des équipes de 2 joueurs avec coordination et stratégie."
         ]
-            },
-            {
+      },
+      {
         id: 15,
         title: "Shooter Coop Viking (défense de vagues)",
         imageUrl: "/Portfolio_Ilyes_Najjari/media/Viking/Viking1.png",
@@ -711,7 +820,7 @@ export const projects = [
           //{ name: 'Blueprint', url: 'https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/Blueprints/' },
           { name: 'C++', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg' },
           //{ name: 'Multijoueur', url: 'https://docs.unrealengine.com/4.27/en-US/InteractiveExperiences/Networking/' },
-         // { name: 'Level Design', url: 'https://docs.unrealengine.com/4.27/en-US/BuildingWorlds/LevelDesign/' },
+          // { name: 'Level Design', url: 'https://docs.unrealengine.com/4.27/en-US/BuildingWorlds/LevelDesign/' },
         ],
         startDate: "2025-03",
         endDate: "2025-04",
@@ -723,42 +832,42 @@ export const projects = [
         ]
       },
       {
-  id: 21,
-  title: "Chromaze - Party-game multijoueur dans un labyrinthe",
-  imageUrl: "/Portfolio_Ilyes_Najjari/media/Chromaze/Chromaze1.png",
-  media: [
-    { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Chromaze/Chromaze1.png" },
-    { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Chromaze/Chromaze2.png" },
-    { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Chromaze/Chromaze3.png" },
-    { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Chromaze/Chromaze4.png" },
-    { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Chromaze/Chromaze5.png" },
-  ],
-  link: "https://github.com/ilyesnajjari/chromaze",
-  description:
-    "Chromaze est un party-game compétitif pour deux joueurs dans un labyrinthe. Le sol est constitué de tuiles que les joueurs colorent en marchant dessus. Au bout d’un temps imparti, celui qui a coloré le plus de cases remporte la partie. Ennemis et bonus viennent pimenter la partie. Inspiré de jeux classiques comme Pac-Man et QiX, avec une vue en plongée et contrôles à la manette.",
-  technologies: [
-    { name: 'Unity', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg' },
-    { name: 'C#', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg' },
-  ],
-  startDate: "Avril 2025",
-  endDate: "Mai 2025",
-  teamRole: "Développeur gameplay & réseau",
-  challenges: [
-    "Implémentation du système de recoloration dynamique des tuiles par joueur.",
-    "Gestion des ennemis perturbateurs et des bonus collectables.",
-    "Optimisation du gameplay compétitif en temps limité.",
-    "Développement du mode multijoueur local en LAN avec synchronisation des états.",
-    "Design d’une interface claire avec vue en plongée et contrôles manette."
-  ],
-},
+        id: 21,
+        title: "Chromaze - Party-game multijoueur dans un labyrinthe",
+        imageUrl: "/Portfolio_Ilyes_Najjari/media/Chromaze/Chromaze1.png",
+        media: [
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Chromaze/Chromaze1.png" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Chromaze/Chromaze2.png" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Chromaze/Chromaze3.png" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Chromaze/Chromaze4.png" },
+          { type: 'image', src: "/Portfolio_Ilyes_Najjari/media/Chromaze/Chromaze5.png" },
+        ],
+        link: "https://github.com/ilyesnajjari/chromaze",
+        description:
+          "Chromaze est un party-game compétitif pour deux joueurs dans un labyrinthe. Le sol est constitué de tuiles que les joueurs colorent en marchant dessus. Au bout d’un temps imparti, celui qui a coloré le plus de cases remporte la partie. Ennemis et bonus viennent pimenter la partie. Inspiré de jeux classiques comme Pac-Man et QiX, avec une vue en plongée et contrôles à la manette.",
+        technologies: [
+          { name: 'Unity', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg' },
+          { name: 'C#', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg' },
+        ],
+        startDate: "Avril 2025",
+        endDate: "Mai 2025",
+        teamRole: "Développeur gameplay & réseau",
+        challenges: [
+          "Implémentation du système de recoloration dynamique des tuiles par joueur.",
+          "Gestion des ennemis perturbateurs et des bonus collectables.",
+          "Optimisation du gameplay compétitif en temps limité.",
+          "Développement du mode multijoueur local en LAN avec synchronisation des états.",
+          "Design d’une interface claire avec vue en plongée et contrôles manette."
+        ],
+      },
     ]
   },
-  
-  
-  
+
+
+
 ];
 
-//DERNIERE ID 23
+//DERNIERE ID 26
 
 
 // Données personnelles (à personnaliser)
@@ -768,7 +877,7 @@ export const personalInfo = {
   email: 'ilyes.najjari@hotmail.com',
   location: 'France ',
   availability: '',
-  bio: "Étudiant en école d'ingénieur et en master d’informatique, rigoureux, passionné par les technologies, la finance, la data et l'enseignement. J'ai une forte appétence pour l'algorithmique, le développement d'applications, les systèmes intelligents et l'analyse de données.",
+  bio: "Je suis passionné par l'innovation, la finance, la data et l'enseignement. Rigoureux et autonome, je maîtrise le développement d'applications complexes, le DevOps et l'intégration de modèles d'IA générative. J'ai une forte appétence pour l'algorithmique, les systèmes intelligents et l'analyse de données, avec un intérêt grandissant pour le MLOps.",
   socials: {
     github: 'https://github.com/ilyesnajjari',
     linkedin: 'https://www.linkedin.com/in/ilyes-najjari',
@@ -779,14 +888,25 @@ export const personalInfo = {
 // Données d'expérience
 export const experiences = [
   {
-    title: 'Développeur',
-    company: 'ensome',
-    period: '2024',
+    title: 'Développeur IA',
+    company: 'Aubay Solutec',
+    period: '09/2025 – 03/2026 | Lyon',
+    description: [
+      "Conception et développement d'une solution d'automatisation documentaire par IA générative (LLM/Ollama) intégrée aux pipelines GitLab CI/CD.",
+      "Architecture microservices, développement Fullstack et industrialisation en méthode Agile Scrum.",
+      "Technologies : Java Spring Boot, Angular et Python"
+    ]
+  },
+  {
+    title: 'Développeur web',
+    company: 'Ensome',
+    period: '03/2024 – 07/2024 | Saint-Étienne',
     description: [
       "Création d'une extension Firefox permettant d'interagir directement avec le navigateur.",
-      "Développement d'un dashboard dynamique exploitant des données en temps réel pour la visualisation et l’analyse."
+      "Développement d'un dashboard dynamique exploitant des données en temps réel pour la visualisation et l’analyse.",
+      "Technologies : JavaScript et HTML"
     ]
-  },  
+  },
   {
     title: 'Assistant de production',
     company: 'T.HARDI Production',
@@ -802,33 +922,7 @@ export const experiences = [
     description: [
       "Accompagnement intensif d'élèves préparant les concours d’entrée aux grandes écoles d’ingénieurs en mathématiques, physique-chimie et informatique",
     ],
-  },
-  {
-    title: 'Stage en cabinet comptable',
-    company: 'Argauane',
-    period: '2017',
-    description: [
-      "Participation à la révision de dossiers clients et à l’élaboration de bilans comptables",
-    ],
-  },
-  {
-    title: 'Boulangerie Reynaud LOT',
-    company: 'Carpentras',
-    period: '2018 – 2019',
-    description: [
-      "Réception et contrôle de matières premières, élaboration de produits selon fiches techniques",
-      "Maintenance des équipements, signalement d’anomalies",
-    ],
-  },
-  {
-    title: 'Emploi saisonnier',
-    company: 'Carpentras',
-    period: '07/2021 – 08/2021',
-    description: [
-      "Vente et analyse des prix du marché",
-      "Achat et gestion de stock de plantes",
-    ],
-  },
+  }
 ];
 
 // Données de formation
@@ -836,21 +930,21 @@ export const education = [
   {
     degree: 'Master en Informatique',
     institution: 'Université du Québec à Chicoutimi',
-    period: '2023 – présent',
+    period: '2023 – 2026',
     description: "Spécialisation en intelligence artificielle et développement logiciel",
     image: '',
   },
   {
     degree: 'DU Innov\'IT',
     institution: 'Université Jean Monnet',
-    period: '2023 – présent',
+    period: '2023 – 2026',
     description: "Double cursus en parallèle de la formation d'ingénieur, orienté innovation numérique",
     image: '',
   },
   {
     degree: 'Diplôme d’Ingénieur',
     institution: 'Télécom Saint-Étienne',
-    period: '2022 – présent',
+    period: '2022 – 2026',
     description: 'Spécialisation en informatique, projets techniques et applications mobiles/web',
     image: '',
   },
@@ -872,7 +966,7 @@ export const education = [
 
 export const skills = {
   hardskills: {
-    coding: [
+    "Programmation": [
       { name: 'JavaScript', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
       { name: 'TypeScript', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
       { name: 'Java', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' },
@@ -885,7 +979,7 @@ export const skills = {
       { name: 'Blueprint', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg' },
       { name: 'Shell/Bash', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg' },
     ],
-    tools: [
+    "Outils": [
       { name: 'React', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
       { name: 'Node.js', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
       { name: 'Express', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg' },
@@ -898,28 +992,29 @@ export const skills = {
       { name: 'Unity', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg' },
       { name: 'Unreal Engine', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg' },
       { name: 'Android Studio', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg' },
-      { name: 'Render', url: 'https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/render.svg' },,
+      { name: 'Render', url: 'https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/render.svg' },
     ],
-    management: [
+    "Gestion": [
       { name: 'Trello', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg' },
       { name: 'Slack', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg' },
       { name: 'Pack Office', url: 'https://cdn-icons-png.flaticon.com/512/732/732221.png' },
       { name: 'Agile/Scrum', url: 'https://cdn-icons-png.flaticon.com/512/2721/2721296.png' },
     ],
-    databases: [
+    "Bases de données": [
       { name: 'SQL', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
       { name: 'NoSQL', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
       { name: 'PostgreSQL', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
       { name: 'SQLite', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg' },
+      { name: 'H2', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' }
     ],
-    dataScience: [
+    "Data Science": [
       { name: 'scikit-learn', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg' },
       { name: 'pandas', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg' },
       { name: 'matplotlib', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg' },
       { name: 'NumPy', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg' },
       { name: 'Jupyter', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg' },
-{ name: 'RAPIDS', url: 'https://cdn.jsdelivr.net/gh/feathericons/feather@main/icons/cpu.svg' }
-],
+      { name: 'RAPIDS', url: 'https://cdn.jsdelivr.net/gh/feathericons/feather@main/icons/cpu.svg' }
+    ],
   },
   soft: [
     'Autonomie',

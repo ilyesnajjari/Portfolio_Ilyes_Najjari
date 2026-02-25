@@ -13,6 +13,7 @@ const ProjectCard = ({ project }) => {
         <img
           src={project.imageUrl}
           alt={project.title}
+          loading="lazy"
           className="project-card__image"
         />
         <div className="project-card__content">

@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { projects } from '../data/portfolioData'; // Importer les projets
 import './ProjectPage.css'; // Importer le fichier CSS spécifique à la page projet
 
@@ -12,14 +13,8 @@ const ProjectPage = () => {
 
   const [fullscreenImage, setFullscreenImage] = useState(null); // État pour l'image en plein écran
 
-  useEffect(() => {
-    // Fait défiler la page vers le haut lorsque le composant est monté
-    window.scrollTo(0, 0);
-  }, []);
-
   const handleBack = () => {
     navigate(-1); // Navigue vers la page précédente
-    window.scrollTo(0, 0); // Fait défiler vers le haut après navigation
   };
 
   if (!project) {
@@ -27,7 +22,13 @@ const ProjectPage = () => {
   }
 
   return (
-    <div className="project-page p-10 max-w-5xl mx-auto">
+    <motion.div
+      className="project-page p-10 max-w-5xl mx-auto"
+      initial={{ opacity: 0, x: -20 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: 20 }}
+      transition={{ duration: 0.4 }}
+    >
       {/* Bouton Retour */}
       <button
         onClick={handleBack} // Navigue vers la page précédente
@@ -85,6 +86,7 @@ const ProjectPage = () => {
                   <img
                     src={tech.url}
                     alt={tech.name}
+                    loading="lazy"
                     className="inline-block w-5 h-5 mr-2"
                   />
                   {tech.name}
@@ -93,44 +95,48 @@ const ProjectPage = () => {
             </div>
           </div>
 
-{/* Lien vers le code source et site web */}
-{(project.link || project.site) && (
-  <div className="bubble bg-light-bg p-4 rounded-lg shadow-md">
-    <h2 className="text-xl font-semibold mb-2 text-primary">
-      Code Source{project.site ? ' et Site' : ''} :
-    </h2>
-    <div className="logo-container">
-      {project.link && (
-        <a
-          href={project.link}
-          className="flex items-center"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-            alt="GitHub Logo"
-            className="github-logo"
-          />
-        </a>
-      )}
-      {project.site && (
-        <a
-          href={project.site}
-          className="flex items-center"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/841/841364.png"
-            alt="Site Web"
-            className="github-logo"
-          />
-        </a>
-      )}
-    </div>
-  </div>
-)}
+          {/* Lien vers le code source et site web */}
+          {(project.link || project.site) && (
+            <div className="bubble bg-light-bg p-4 rounded-lg shadow-md">
+              <h2 className="text-xl font-semibold mb-2 text-primary">
+                Code Source{project.site ? ' et Site' : ''} :
+              </h2>
+              <div className="logo-container">
+                {project.link && (
+                  <a
+                    href={project.link}
+                    className="flex items-center"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                      alt="GitHub Logo"
+                      loading="lazy"
+                      className="github-logo"
+                      aria-label="Code Source sur GitHub"
+                    />
+                  </a>
+                )}
+                {project.site && (
+                  <a
+                    href={project.site}
+                    className="flex items-center"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/841/841364.png"
+                      alt="Site Web"
+                      loading="lazy"
+                      className="github-logo"
+                      aria-label="Lien vers le site"
+                    />
+                  </a>
+                )}
+              </div>
+            </div>
+          )}
         </div>
         {/* Colonne droite : Grosse bulle Résultats/Demo */}
         {project.media && project.media.length > 0 && (
@@ -143,7 +149,8 @@ const ProjectPage = () => {
                     <img
                       src={item.src}
                       alt={`${project.title} - Media ${index + 1}`}
-                      className="rounded-lg w-full object-cover shadow-lg cursor-pointer"
+                      loading="lazy"
+                      className="rounded-lg w-full object-cover shadow-lg cursor-pointer transition-transform hover:scale-105"
                       onClick={() => setFullscreenImage(item.src)} // Affiche l'image en plein écran
                     />
                   ) : item.type === 'video' ? (
@@ -176,13 +183,20 @@ const ProjectPage = () => {
       {/* Affichage de l'image en plein écran */}
       {fullscreenImage && (
         <div
-          className="fullscreen-overlay fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
+          className="fullscreen-overlay fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-[100]"
           onClick={() => setFullscreenImage(null)} // Ferme l'image en cliquant
         >
-          <img src={fullscreenImage} alt="Fullscreen" className="max-w-full max-h-full" />
+          <button
+            className="absolute top-5 right-5 text-white bg-gray-800 hover:bg-gray-700 rounded-full w-10 h-10 flex items-center justify-center text-xl font-bold transition-colors z-[110]"
+            onClick={(e) => { e.stopPropagation(); setFullscreenImage(null); }}
+            aria-label="Fermer"
+          >
+            ✕
+          </button>
+          <img src={fullscreenImage} alt="Fullscreen" className="max-w-[90vw] max-h-[90vh] object-contain" />
         </div>
       )}
-    </div>
+    </motion.div>
   );
 };
 
